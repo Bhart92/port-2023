@@ -1,24 +1,18 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Timeline from "../components/timeline/Timeline";
 import LoadingView from "./LoadingView";
 import SectionTitle from "../components/reusables/SectionTitle";
-import { gsap } from "gsap";
-
-const AboutView = ({ onImagesLoaded }) => {
+import { revealHeader } from "../js/animations";
+import onImagesLoaded from "../js/imageloadCheck";
+const AboutView = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  useLayoutEffect(() => {
-    let loadAnimationTl = gsap.timeline();
-    loadAnimationTl.to("header", {
-      transform: "translate(0, 0)",
-      delay: 0.25,
-      duration: 0.75,
-    });
+  useEffect(() => {
+    revealHeader();
 
     const container = document.querySelector(".about-timeline-wrapper");
 
     onImagesLoaded(container, () => {
-      console.log("fired images about");
       container.classList.add("active");
       setImagesLoaded(true);
     });
@@ -41,7 +35,9 @@ const AboutView = ({ onImagesLoaded }) => {
           but inability to find something I was passionate about. They suggested
           I look into web development and that night I began learning HTML and
           CSS - I quickly became obsessed. Looking back its hard to believe that
-          inspection changed the trajectory of my life.
+          inspection changed the trajectory of my life. Fast forward to today -
+          I'm a Front End Developer - I've worked on projects for clients as
+          large as Verizon, Disney, NBC, and more.
         </p>
       </div>
       <div className="about-timeline-wrapper">

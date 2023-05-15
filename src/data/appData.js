@@ -57,7 +57,7 @@ export const appData = {
   timelineContent: [
     {
       title: "I began learning part time",
-      desc: "I completed several courses across various platforms focusing on the fundamentals of web development.",
+      desc: "I completed several courses across various platforms focusing on the fundamentals of web development. I spent several months learning the foundations of HTML, CSS, and JavaScript.",
       timeLineIcon: "images/udemy.svg",
       timeLineIconAlt: "UDemy",
       date: "Dec 2018 - Nov 2019",
@@ -66,7 +66,7 @@ export const appData = {
     },
     {
       title: "The Complete React Developer",
-      desc: "I wanted to learn React so I completed The Complete React Developer course and fell in love with React. This course was comprehensive and taught me a lot about React and JavaScript.",
+      desc: "I wanted to learn React so I purchased The Complete React Developer course and fell in love with React. This course was comprehensive and taught me a lot about React and JavaScript.",
       timeLineIcon: "images/udemy.svg",
       timeLineIconAlt: "html brackets",
       date: "Dec 2019 - Jan 2020",
@@ -75,7 +75,7 @@ export const appData = {
     },
     {
       title: "Took a break...",
-      desc: "I built several React projects and started to feel burnt out juggling my appraisal business and learning to code. So I took lengthy break from coding and focused on my full time appraisal job and letting myself unwind a bit.",
+      desc: "I built several React projects and started to feel burnt out juggling my appraisal business and learning to code. So I took lengthy break from coding and focused on my full time appraisal job while letting myself unwind a bit.",
       timeLineIcon: "images/htmlBracket.svg",
       timeLineIconAlt: "html brackets",
       date: "Jan 2020 - Sept 2021",
@@ -83,7 +83,7 @@ export const appData = {
     },
     {
       title: "Mern Stack Front To Back",
-      desc: "Wanting to freshen up after a long break I decided to take this Brad Traversy course since he makes quality material. After finishing this course I was ready to get back to work on my portfolio.",
+      desc: "Wanting to freshen up after a long break I decided to take this Brad Traversy course since they make quality material. After finishing this course I was ready to get back to work on my portfolio.",
       timeLineIcon: "images/udemy.svg",
       timeLineIconAlt: "Udemy.com",
       creator: "Brad Traversy",
@@ -92,7 +92,7 @@ export const appData = {
     },
     {
       title: "Fractality, LLC.",
-      desc: "I was connected with the director of Fractality, an interactive meadia company who was just getting off the ground. I worked closely with them to build their web presence.",
+      desc: "I was connected with the director of Fractality, an interactive media company who were just getting off the ground. I worked closely with them to build their web presence.",
       projectImg: "/images/fractality.gif",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Fractality, an interactive media company",
@@ -101,7 +101,7 @@ export const appData = {
     },
     {
       title: "My Car Auction",
-      desc: "in March 2021 I began working at My Car Auction as a full stack developer. While working there I built a module that allowed the company to expand their operations to specified zip codes through the United States.",
+      desc: "In March 2021 I began working at My Car Auction as a full stack developer. While working there I built a module that allowed the company to expand their operations to specified zip codes throughout the United States. I also fixed the web apps responsive design as it would break across screen sizes.",
       timeLineIcon: "images/htmlBracket.svg",
       timeLineIconAlt: "html brackets",
       date: "Mar 2021 - May 2021",
@@ -110,7 +110,7 @@ export const appData = {
     },
     {
       title: "Trigger XR",
-      desc: "In August 2021 I began working at Trigger XR. A mixed reality agency that speecializes in augmented reality applications. While working here I learned a lot about Vue JS and Playcanvas. I was privileged to work on a lot of awesome projects with big name clients while at Trigger.",
+      desc: "In August 2021 I began working at Trigger XR. A mixed reality agency that specializes in augmented reality applications. While working here I learned a lot about Vue JS and Web AR. I was privileged to work on a lot of awesome projects with big name clients.",
       timeLineIcon: "images/htmlBracket.svg",
       timeLineIconAlt: "html brackets",
       date: "Aug 2021 - May 2023",
@@ -119,17 +119,28 @@ export const appData = {
     },
     {
       title: "Trigger | Verizon Portal Projects",
-      desc: "I hit the ground running at Trigger and was thrown on the Verizon Portal experiences. I partook, and sometimes led the development on events including the Super Bowl Halftime Show and Winter X Games portal experiences.",
+      desc: "I hit the ground running at Trigger and was thrown on the Verizon Portal Experiences. I partook in, and sometimes led the development for events including the Winter X Games and Super Bowl Halftime Show portal experiences.",
       projectImg: "/images/sb.mp4",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
-      date: "Nov 2021 - Feb 2022",
+      date: "Sept 2021 - Feb 2022",
       url: "https://www.triggerxr.com/work/super-bowl-halftime-show",
+      isVideo: true,
+    },
+    ,
+    {
+      title: "Trigger | Baila Burnie",
+      desc: "This project for AT&T and Miami Heat revolved around Burnie, the Miami Heat mascot. I provided support and did a significant amount of work building the UI and fixing all bugs that were reported by QA.",
+      projectImg: "/images/burnie.mp4",
+      timeLineIcon: "images/display.svg",
+      timeLineIconAlt: "Trigger XR",
+      date: "Oct 2021 - Dec 2022",
+      url: "https://www.triggerxr.com/work/baila-burnie",
       isVideo: true,
     },
     {
       title: "Trigger | The PureLeaf Experience",
-      desc: "I led the development of The PureLeaf Experience for PepsiCo. This was the first project I led and it came in on time and under budget. I was really happy with the end result of this project.",
+      desc: "I led the development of The PureLeaf Experience for PepsiCo. This was the first project I led and it came in on time and under budget. This experience showcased all of the PureLeaf tea flavors and allowed users to enter a sweepstakes.",
       projectImg: "/images/pureleaf.mp4",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
@@ -139,7 +150,7 @@ export const appData = {
     },
     {
       title: "Trigger | The La Brea Sinkhole Experience",
-      desc: "This was a web AR project for the TV series LA Brea for the client NBC. This was my second project as lead developer and the project came in under budget while exceeding client expectations. ",
+      desc: "This was a web AR project focused TV series LA Brea for the client NBC. This was my second project as lead developer and the project came in under budget while exceeding client expectations. Users were able to interact with a 3d sinkhole that would open in their area. Upon interaction various items from the show would eject ultimately revealing a teaser for season 2.",
       projectImg: "/images/sinkhole.mp4",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
@@ -164,5 +175,4 @@ export const appData = {
       isVideo: false,
     },
   ],
-  getISDesktop: () => {},
 };

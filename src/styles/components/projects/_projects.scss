@@ -1,0 +1,16 @@
+.portfolio-body-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 0.35s ease;
+  &.active {
+    opacity: 1;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 90%;
+    padding-bottom: vh(25, $design-height-desktop);
+  }
+  @media screen and (min-width: 1300px) {
+    width: 100%;
+  }
+}

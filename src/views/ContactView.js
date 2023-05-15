@@ -1,14 +1,9 @@
-import React, { useLayoutEffect } from "react";
-import { gsap } from "gsap";
+import React, { useEffect } from "react";
+import { revealHeader } from "../js/animations";
 
 const ContactView = () => {
-  useLayoutEffect(() => {
-    let loadAnimationTl = gsap.timeline();
-    loadAnimationTl.to("header", {
-      transform: "translate(0, 0)",
-      delay: 0.25,
-      duration: 0.75,
-    });
+  useEffect(() => {
+    revealHeader();
   });
   return (
     <div className="contact section-body">

@@ -9,8 +9,6 @@ const Timeline = () => {
   const generateTimelineEles = () => {
     return timelineContent.map((timelineEle) => {
       const { isVideo } = timelineEle;
-      console.log("isVideo");
-      console.log(isVideo);
       return (
         <TimelineElement
           title={timelineEle.title}

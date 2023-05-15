@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import { gsap } from "gsap";
+import { revealLanding } from "../js/animations";
+import LandingButtons from "../components/landing/LandingButtons";
+
 const LandingView = () => {
   useEffect(() => {
-    let loadAnimationTl = gsap.timeline({ delay: 0.25 });
-    loadAnimationTl.to(".landing-hero", {
-      top: 0,
-      opacity: 1,
-      delay: 0.25,
-      duration: 1,
-    });
-    loadAnimationTl.to("header", { transform: "translate(0, 0)" }, "<.25");
+    revealLanding();
   });
   return (
     <div className="landing section-body">
@@ -21,14 +15,7 @@ const LandingView = () => {
           </h1>
           <h2>&lt; Web Developer /&gt;</h2>
         </div>
-        <div className="landing-hero-btns">
-          <NavLink className="btn button-fill" to="/portfolio">
-            Portfolio
-          </NavLink>
-          <NavLink className="btn button-outline" to="/about">
-            About
-          </NavLink>
-        </div>
+        <LandingButtons />
       </div>
     </div>
   );
