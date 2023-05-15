@@ -12,12 +12,25 @@ const TimelineElement = ({
   projectImgAlt,
   url,
   courseList,
+  isVideo,
 }) => {
   const contentStyles = {
     background: "#FFF",
     color: "#000",
     borderRadius: "25px",
     borderBottom: "none",
+  };
+  const generateMedia = () => {
+    if (isVideo) {
+      return (
+        <video controls>
+          <source src={projectImg} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      );
+    } else {
+      return <img src={projectImg} alt={projectImgAlt} />;
+    }
   };
   const generateListItems = () => {
     return (
@@ -56,9 +69,7 @@ const TimelineElement = ({
       {courseList && courseList.length > 0 && generateListItems()}
       {projectImg ? (
         <div className="timeline-element-image">
-          <a href={url}>
-            <img src={projectImg} alt={projectImgAlt} />
-          </a>
+          <a href={url}>{generateMedia()}</a>
         </div>
       ) : (
         ""

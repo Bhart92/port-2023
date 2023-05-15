@@ -8,7 +8,9 @@ const Timeline = () => {
   const { timelineContent } = appData;
   const generateTimelineEles = () => {
     return timelineContent.map((timelineEle) => {
-      console.log(timelineEle.courseList);
+      const { isVideo } = timelineEle;
+      console.log("isVideo");
+      console.log(isVideo);
       return (
         <TimelineElement
           title={timelineEle.title}
@@ -21,6 +23,7 @@ const Timeline = () => {
           creator={timelineEle?.creator}
           url={timelineEle?.url}
           courseList={timelineEle?.courseList}
+          isVideo={isVideo}
         />
       );
     });

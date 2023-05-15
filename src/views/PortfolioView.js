@@ -22,6 +22,20 @@ const PortfolioView = ({ onImagesLoaded }) => {
       setImagesLoaded(true);
     });
   }, []);
+
+  const generateMedia = (project) => {
+    const { isVideo, image, imageAlt } = project;
+    if (isVideo) {
+      return (
+        <video controls>
+          <source src={image} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      );
+    } else {
+      return <img src={image} alt={imageAlt} />;
+    }
+  };
   const generateProjectMarkup = () => {
     return (
       projects &&
@@ -29,7 +43,7 @@ const PortfolioView = ({ onImagesLoaded }) => {
         return (
           <div className="portfolio-project-wrapper" key={project.title}>
             <div className="portfolio-project-img">
-              <img src={project.image} alt={project.title} />
+              {generateMedia(project)}
             </div>
             <div className="portfolio-project-body">
               <h2 className="portfolio-project-url">
