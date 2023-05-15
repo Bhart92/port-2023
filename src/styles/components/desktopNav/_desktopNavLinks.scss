@@ -1,0 +1,29 @@
+.desktop-nav-links {
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    top: 10px;
+    color: $off-white;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    padding: 10px;
+    margin: -10px;
+    font-family: "lato-light";
+    &:hover,
+    &:active,
+    &:focus {
+      color: $blue;
+    }
+    @media screen and (min-width: 1000px) {
+      margin: vh(20, $design-height-desktop) 0;
+    }
+  }
+}
+.nav-link {
+  opacity: 1;
+  @media screen and (min-width: 1000px) {
+    opacity: 0;
+  }
+}

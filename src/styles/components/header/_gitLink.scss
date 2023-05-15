@@ -1,0 +1,19 @@
+.desktop-git {
+  text-align: center;
+  a {
+    font-family: "lato-light";
+    color: $off-white;
+    ion-icon {
+      transform: scale(1.5);
+      margin-left: vw(5, $design-width-desktop);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: $blue;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    margin-top: vh(50, $design-height-desktop);
+  }
+}

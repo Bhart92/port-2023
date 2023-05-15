@@ -1,0 +1,190 @@
+.vertical-timeline {
+  padding: 0;
+  width: 100%;
+  @media screen and (min-width: 1000px) {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0 !important;
+  }
+  @media screen and (max-width: 999px) {
+    width: 80% !important;
+  }
+  @media screen and (max-width: 650px) {
+    width: 100% !important;
+  }
+  &:before {
+    height: 98% !important;
+  }
+  .timeline-element {
+    .vertical-timeline-element-icon {
+      img {
+        max-height: 25px;
+        max-width: 35px;
+      }
+    }
+    .vertical-timeline-element-content {
+      margin-bottom: vh(30);
+    }
+    &:first-of-type {
+      .vertical-timeline-element-content {
+        margin-top: vh(25);
+      }
+    }
+    &:last-of-type {
+      .vertical-timeline-element-content {
+        margin-bottom: vh(55);
+      }
+    }
+  }
+
+  &:before {
+    background: lighten($dark-grey, 60%) !important;
+    width: 2px;
+  }
+}
+.vertical-timeline-element-date {
+  font-size: 2rem;
+  opacity: 1 !important;
+  padding: 0 !important;
+  @media screen and (min-width: 1000px) {
+    font-size: 18px !important;
+  }
+  @media screen and (max-width: 900px) and (min-height: 900px) {
+    font-size: 14px !important;
+  }
+}
+.timeline--image--container {
+  width: 100%;
+  margin: 10px 0;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.vertical-timeline-element-title {
+  color: $dark-grey;
+  font-size: vw(18);
+}
+.vertical-timeline-ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-left: 25px;
+  font-size: 1.4rem;
+  li {
+    list-style-type: circle;
+    flex-basis: 95%;
+  }
+}
+.vertical-timeline-element-content {
+  padding: vw(20) !important;
+  padding-right: vw(10) !important;
+  @media screen and (min-width: 1000px) {
+    padding: 34px !important;
+  }
+  p {
+    margin: 0 !important;
+    color: $dark-grey;
+    @media screen and (min-width: 1000px) {
+      font-size: 11px;
+    }
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 900px) and (min-height: 900px) {
+      line-height: 30px;
+    }
+    @media screen and (max-width: 950px) {
+      font-size: 16px !important;
+    }
+  }
+  h3 {
+    font-family: "lato-light";
+    margin: vh(8) 0;
+    &:after,
+    &:before {
+      margin: vh(5) 0;
+      content: " ";
+      display: block;
+      width: 75px;
+      height: 0.5px;
+      background: rgba(0, 191, 255, 0.75);
+    }
+  }
+  h3,
+  span {
+    font-family: "lato-light";
+    color: $dark-grey !important;
+    @media screen and (min-width: 1000px) {
+      font-size: 12px;
+    }
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 900px) and (min-height: 900px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 950px) {
+      font-size: 13px;
+    }
+  }
+  .timeline-element-header {
+    h2 {
+      @media screen and (min-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+        font-size: 24px !important;
+      }
+      @media screen and (max-width: 900px) and (min-height: 900px) {
+        font-size: 22px !important;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .timeline-element-desc {
+    margin-bottom: vh(5);
+  }
+  .timeline-element-list {
+    margin: vh(10) 0;
+
+    margin-left: 20px;
+    ul {
+      line-height: 20px;
+      li {
+        font-family: "lato";
+        color: #333;
+      }
+    }
+  }
+  .timeline-element-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: vh(15) auto;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    margin: 0 auto !important;
+  }
+  .vertical-timeline-element {
+    margin: 7em 0 !important;
+  }
+}

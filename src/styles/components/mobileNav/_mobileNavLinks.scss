@@ -1,0 +1,36 @@
+.mobile-nav-links {
+  display: flex;
+  position: relative;
+  z-index: 5;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $dark-grey;
+  transform: translateY(-300%);
+  transition: all 0.5s ease;
+  padding-bottom: vh(20);
+  &.active {
+    transform: translateY(0%);
+  }
+  a {
+    ion-icon {
+      transform: scale(1.5);
+      margin-right: vw(10);
+    }
+    font-family: "lato-light";
+    color: $off-white;
+    margin: vh(25) vw(20);
+    font-size: 20px;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $blue;
+    }
+  }
+  ion-icon {
+    &:last-of-type {
+      margin-left: vw(5);
+    }
+  }
+}

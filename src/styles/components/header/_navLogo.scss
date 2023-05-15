@@ -1,0 +1,53 @@
+.desktop-nav-logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: center;
+  width: 100%;
+  &:hover,
+  &:active,
+  &:focus {
+    h1 {
+      color: $blue;
+      border: 3px solid $blue;
+    }
+  }
+  h1 {
+    border: 3px solid white;
+    display: inline-block;
+    font-size: 5rem;
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.35s ease;
+    font-size: 48px;
+    span {
+      color: #ff3f3f;
+      transition: all 0.35s ease;
+    }
+  }
+  h2 {
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+      display: none;
+    }
+    @media screen and (min-width: 1000px) {
+      display: block;
+    }
+    display: none;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    color: $off-white;
+    font-size: 16px;
+    line-height: vh(18);
+    font-family: "lato";
+    span {
+      color: $blue;
+      font-family: "lato-light";
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+}

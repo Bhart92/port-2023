@@ -1,0 +1,17 @@
+@import "./base/settings";
+@import "./base/base";
+@import "./views/landingView";
+@import "./views/portfolioView";
+@import "./views/aboutView";
+@import "./views/contactView";
+@import "./components/timeline/timeline";
+@import "./components/header/header";
+@import "loaders.css/src/animations/ball-grid-pulse.scss";
+@import "./components/loader/loader";
+@import "./components/header/navLogo";
+@import "./components/header/gitLink";
+@import "./components/desktopNav/desktopNav";
+@import "./components/desktopNav/desktopNavLinks";
+@import "./components/mobileNav/burgerMenu";
+@import "./components/mobileNav/mobileNav";
+@import "./components/mobileNav/mobileNavLinks";
