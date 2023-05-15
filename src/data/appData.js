@@ -24,7 +24,7 @@ export const appData = {
       title: "Fractality",
       description:
         "A single page style application built for Fractality, an interactive media company. This web app uses GSAP to provide a dyamic feel to an otherwise static web experience.",
-      image: "/images/fractality.PNG",
+      image: "/images/fractality.gif",
       imageStatus: false,
       imageAlt: "Fractality Interactive Media",
       url: "https://www.fractality.co/",
@@ -34,7 +34,7 @@ export const appData = {
       title: "Pepsi PureLeaf Experience",
       description:
         "Users scan a tea bottle to activate the experience. They then tap to place a grid of animated bottles on pedestals. When a pedestal is tapped, a new array of columns reveal matching the flavor selected and showcasing said flavor with various fruits & tea leaves.",
-      // image: "/images/pureLeaf.gif",
+      image: "/images/pureLeaf.gif",
       imageStatus: false,
       imageAlt: "Pepsi PureLeaf Experience",
       tech: "Vue JS | JavaScript | Playcanvas | SCSS | TensorFlow ML",
@@ -43,9 +43,9 @@ export const appData = {
       title: "La Brea Sinkhole Experience",
       description:
         "Users place a 3d sinkhole in their environment and interact with the sinkhole to watch various items eject from another dimension.",
-      // image: "/images/sinkhole.gif",
+      image: "/images/sinkhole.gif",
       imageStatus: false,
-      imageAlt: "FUSE",
+      imageAlt: "La Brea sinkhole Experience",
       tech: "Vue JS | JavaScript | Playcanvas | SCSS",
     },
   ],
