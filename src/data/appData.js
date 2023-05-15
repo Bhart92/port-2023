@@ -4,7 +4,7 @@ export const appData = {
       title: "Gainz Workout Randomizer",
       description:
         "Gainz Workout Randomizer helps users mix up there workout routine. Each workout has a link to youtube containing a query to that workout so users can learn how to do workouts as they generate them. This app was built purely using React and SCSS.",
-      image: "/images/gainz.png",
+      image: "/images/gainz.gif",
       imageStatus: false,
       imageAlt: "Gainz Workout Randomizer App",
       url: "https://main--symphonious-twilight-127b7c.netlify.app/",
