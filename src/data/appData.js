@@ -18,7 +18,7 @@ export const appData = {
       image: "/images/airGradesDesk.PNG",
       imageStatus: false,
       imageAlt: "Air Grades",
-      url: "https://airgrades.herokuapp.com/",
+      url: "https://main--meek-cobbler-63ea47.netlify.app/",
       tech: "React | Redux | SCSS | AirIQ API",
       isVideo: false,
     },
