@@ -3,8 +3,8 @@ export const appData = {
     {
       title: "Gainz Workout Randomizer",
       description:
-        "Gainz Workout Randomizer helps users mix up their workout routine. Every randomly generated workout links out to youtube with a predefined search so users can learn how to do workouts as they generate them. This app was built purely using React and SCSS.",
-      image: "/images/gainz.gif",
+        "Gainz Workout Randomizer helps users mix up their workout routine. Every randomly generated workout links out to youtube with a pre-defined search so users can learn how to do workouts as they generate them. This app was built purely using React and SCSS.",
+      image: "/images/gainz.png",
       imageStatus: false,
       imageAlt: "Gainz Workout Randomizer App",
       url: "https://main--symphonious-twilight-127b7c.netlify.app/",
@@ -26,7 +26,7 @@ export const appData = {
       title: "Fractality",
       description:
         "A single page static website built for Fractality, an interactive media company. This site leans heavily into GSAP to provide a dyamic feel to an otherwise static web experience.",
-      image: "/images/fractality.gif",
+      image: "/images/fractality.png",
       imageStatus: false,
       imageAlt: "Fractality Interactive Media",
       url: "https://www.fractality.co/",
@@ -74,6 +74,15 @@ export const appData = {
       isVideo: false,
     },
     {
+      title: "Gainz Workout Randomizer",
+      desc: "Gainz Workout Randomizer pulls random workouts using the Exercise API from API-Ninjas. Users specify a muscle group and are given three random workouts. Each workout links to youtube with a predefined query so users can learn as they generate exercises.",
+      projectImg: "images/gainz.png",
+      timeLineIcon: "images/display.svg",
+      timeLineIconAlt: "html brackets",
+      date: "Dec 2019 - Jan 2020",
+      isVideo: false,
+    },
+    {
       title: "Took a break...",
       desc: "I built several React projects and started to feel burnt out juggling my appraisal business and learning to code. So I took lengthy break from coding and focused on my full time appraisal job while letting myself unwind a bit.",
       timeLineIcon: "images/htmlBracket.svg",
@@ -91,9 +100,18 @@ export const appData = {
       isVideo: false,
     },
     {
+      title: "Air Grades",
+      desc: "Wanting to build an app that uses a third party api I built Air Grades. This app allows users to pull detailed air quality information for an array of pre-defined locations across the globe.",
+      image: "/images/airGradesDesk.PNG",
+      timeLineIcon: "images/display.svg",
+      timeLineIconAlt: "Air Grades",
+      date: "Nov 2021 - Dec 2021",
+      isVideo: false,
+    },
+    {
       title: "Fractality, LLC.",
       desc: "I was connected with the director of Fractality, an interactive media company who were just getting off the ground. I worked closely with them to build their web presence.",
-      projectImg: "/images/fractality.gif",
+      projectImg: "/images/fractality.png",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Fractality, an interactive media company",
       date: "Jan 2021 - Feb 2021",
