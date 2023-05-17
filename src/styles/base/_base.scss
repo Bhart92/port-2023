@@ -23,6 +23,9 @@ body {
 
   background-size: cover;
   height: 100vh;
+  @media screen and (max-height: 700px) and (orientation: landscape) {
+    overflow-y: scroll !important;
+  }
 }
 html,
 body {
