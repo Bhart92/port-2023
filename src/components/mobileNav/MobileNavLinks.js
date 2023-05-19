@@ -18,10 +18,6 @@ const MobileNavLinks = ({ toggleMobileNav }) => {
         icon={"mail-outline"}
         onClickFn={toggleMobileNav}
       />
-
-      <a href="./images/resume2020.pdf" download>
-        <ion-icon name="document-attach-outline"></ion-icon> Resume
-      </a>
     </>
   );
 };
