@@ -9,6 +9,7 @@ export const revealHeader = () => {
 export const revealLanding = () => {
   let loadAnimationTl = gsap.timeline({ delay: 0.25 });
   loadAnimationTl.to(".landing-hero", {
+    top: 0,
     opacity: 1,
     delay: 0.25,
     duration: 1,
