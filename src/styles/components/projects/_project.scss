@@ -1,16 +1,16 @@
 .portfolio-project-wrapper {
-  margin: vh(50) auto;
+  margin: 50px auto;
   @media screen and (min-width: 1000px) {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: vh(200, $design-height-desktop) 0;
+    margin: 200px 0;
 
     &:nth-of-type(odd) {
       flex-direction: row-reverse;
 
       .portfolio-project-body {
-        margin-right: vw(20, $design-width-desktop);
+        margin-right: 20px;
         margin-left: 0;
       }
     }
@@ -50,33 +50,24 @@
   }
   .portfolio-project-body {
     @media screen and (min-width: 1000px) {
-      margin-left: vw(20, $design-width-desktop);
+      margin-left: 20px;
       margin-right: 0;
       flex-basis: 50%;
       max-width: 400px;
     }
-    .portfolio-project-url {
-      margin: vh(15) 0 vh(10) 0;
-      a {
-        font-family: "lato-bold";
-        font-size: 26px;
-        text-decoration: none;
-        color: black;
-        @media screen and (min-width: 1000px) {
-          font-size: 20px;
-        }
-      }
+    .portfolio-project-title {
+      margin: 15px 0 10px 0;
     }
     .portfolio-project-tech {
       font-family: "lato-light";
-      margin: vh(8) 0;
+      margin: 8px 0;
       font-size: 16px;
       @media screen and (min-width: 1000px) {
         font-size: 13px;
       }
       &:after,
       &:before {
-        margin: vh(5) 0;
+        margin: 5px 0;
         content: " ";
         display: block;
         width: 75px;
@@ -87,13 +78,19 @@
     .portfolio-project-description {
       font-family: "lato";
       font-size: 18px;
-      line-height: vh(30);
+      line-height: 30px;
       @media screen and (min-width: 1000px) {
         font-size: 14px;
       }
       @media screen and (orientation: landscape) {
         line-height: 24px;
       }
+    }
+    .portfolio-project-url {
+      display: block;
+      margin-top: 5px;
+      color: $dark-grey;
+      font-size: 14px;
     }
   }
 }

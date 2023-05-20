@@ -25,16 +25,16 @@
       }
     }
     .vertical-timeline-element-content {
-      margin-bottom: vh(30);
+      margin-bottom: 30px;
     }
     &:first-of-type {
       .vertical-timeline-element-content {
-        margin-top: vh(25);
+        margin-top: 25px;
       }
     }
     &:last-of-type {
       .vertical-timeline-element-content {
-        margin-bottom: vh(55);
+        margin-bottom: 55px;
       }
     }
   }
@@ -66,7 +66,7 @@
 }
 .vertical-timeline-element-title {
   color: $dark-grey;
-  font-size: vw(18);
+  font-size: 18px;
 }
 .vertical-timeline-ul {
   padding: 0;
@@ -82,8 +82,8 @@
   }
 }
 .vertical-timeline-element-content {
-  padding: vw(20) !important;
-  padding-right: vw(10) !important;
+  padding: 20px !important;
+  padding-right: 10px !important;
   @media screen and (min-width: 1000px) {
     padding: 34px !important;
   }
@@ -106,10 +106,10 @@
   }
   h3 {
     font-family: "lato-light";
-    margin: vh(8) 0;
+    margin: 8px 0;
     &:after,
     &:before {
-      margin: vh(5) 0;
+      margin: 5px 0;
       content: " ";
       display: block;
       width: 75px;
@@ -151,10 +151,10 @@
     }
   }
   .timeline-element-desc {
-    margin-bottom: vh(5);
+    margin-bottom: 5px;
   }
   .timeline-element-list {
-    margin: vh(10) 0;
+    margin: 10px 0;
 
     margin-left: 20px;
     ul {
@@ -169,7 +169,7 @@
     max-width: 100%;
     width: 100%;
     height: auto;
-    margin: vh(15) auto;
+    margin: 15px auto;
     a {
       display: block;
       height: 100%;

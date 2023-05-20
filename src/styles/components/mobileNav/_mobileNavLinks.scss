@@ -9,18 +9,18 @@
   background-color: $dark-grey;
   transform: translateY(-300%);
   transition: all 0.5s ease;
-  padding-bottom: vh(20);
+  padding-bottom: 20px;
   &.active {
     transform: translateY(0%);
   }
   a {
     ion-icon {
       transform: scale(1.5);
-      margin-right: vw(10);
+      margin-right: 10px;
     }
     font-family: "lato-light";
     color: $off-white;
-    margin: vh(25) vw(20);
+    margin: 25px 20px;
     font-size: 20px;
     &:hover,
     &:active,
@@ -30,7 +30,7 @@
   }
   ion-icon {
     &:last-of-type {
-      margin-left: vw(5);
+      margin-left: 5px;
     }
   }
 }

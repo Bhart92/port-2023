@@ -5,7 +5,7 @@
     color: $off-white;
     ion-icon {
       transform: scale(1.5);
-      margin-left: vw(5, $design-width-desktop);
+      margin-left: 5px;
     }
     &:hover,
     &:active,
@@ -14,6 +14,7 @@
     }
   }
   @media screen and (min-width: 1000px) {
-    margin-top: vh(50, $design-height-desktop);
+    margin-top: auto;
+    margin-bottom: 20px;
   }
 }

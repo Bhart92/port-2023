@@ -7,14 +7,16 @@
     width: 90%;
     margin: 0 auto;
   }
+  @media screen and (orientation: landscape) and (max-width: 600px) {
+    margin: 15px auto;
+  }
   .landing-hero {
     height: fit-content;
     width: fit-content;
-
     top: 20px;
     opacity: 0;
     .landing-title {
-      margin-bottom: vh(25);
+      margin-bottom: 25px;
       h1 {
         span {
           color: $red;

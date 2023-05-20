@@ -10,27 +10,6 @@ $design-height-mobile: 667;
 $design-width-desktop: 1280;
 $design-height-desktop: 800;
 
-//convert design pixel size to viewport width
-@function vw($pxSize, $design-width: $design-width-mobile) {
-  $size: $pxSize / $design-width;
-
-  //@return $size * 100vw;
-  //@return calc(var(--vw) * #{$size * 100});
-  @return #{$size * 100}vw;
-}
-
-@function vh($pxSize, $design-height: $design-height-mobile) {
-  $size: $pxSize / $design-height;
-  //@return $size * 100vh;
-  @return calc(var(--vh) * #{$size * 100});
-}
-
-@mixin media-min($media) {
-  @media only screen and (min-width: #{$media}) {
-    @content;
-  }
-}
-
 @font-face {
   font-family: "lato";
   src: url("../fonts/Lato-Black.ttf") format("truetype");
