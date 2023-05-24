@@ -25,19 +25,14 @@ const AboutView = () => {
 
       <div className="about-text-container">
         <p>
-          I've always wanted to work in tech, but could never find the right
-          corner that I felt I belonged. I tried leaning into the hardware side
-          - but it couldn't keep my attention. I tried the network side - but I
-          just didn't enjoy the work. I really thought tech just wasn't for me
-          by the time I became a real estate appraiser in my mid twenties. That
-          was until I met an individual who worked as a software engineer while
-          performing an appraisal inspection. I expressed my interest in tech,
-          but inability to find something I was passionate about. They suggested
-          I look into web development and that night I began learning HTML and
-          CSS - I quickly became obsessed. Looking back its hard to believe that
-          inspection changed the trajectory of my life. Fast forward to today -
-          I'm a Front End Developer - I've worked on projects for clients as
-          large as Verizon, Disney, NBC, and more.
+          I've worked as a professional web developer for the past three years
+          with a focus in front-end technologies including React and Vue. In my
+          time as a dev I have launched large budget projects for clients
+          including Verizon, NBC, and PepsiCo. I've built modules enabling sales
+          teams to expand across the US and helped build and maintain the web
+          presence of several IPs. My expertise has allowed me to bring projects
+          in under-budget while exceeding expectations. I love my work and look
+          forward to new challenges everyday.
         </p>
       </div>
       <div className="about-timeline-wrapper">
