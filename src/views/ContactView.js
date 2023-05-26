@@ -16,12 +16,6 @@ const ContactView = () => {
           <a href="mailto: hartwebdev92@gmail.com">Hartwebdev92@gmail.com</a>
         </h1>
 
-        <h2>
-          You can download my&nbsp;
-          <a href="./images/resume2020.pdf" download>
-            Resume Here
-          </a>
-        </h2>
         <h3>
           View my&nbsp;
           <a href="https://github.com/Bhart92" download>
