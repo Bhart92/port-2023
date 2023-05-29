@@ -1,9 +1,10 @@
 import React from "react";
 import Loader from "react-loaders";
+import { isReduced } from "../js/animations";
 
 const LoadingView = ({ text }) => (
   <div className="loading">
-    <Loader type="ball-grid-pulse" />
+    {!isReduced && <Loader type="ball-grid-pulse" />}
     <span>{text}</span>
   </div>
 );

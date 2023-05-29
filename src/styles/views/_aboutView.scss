@@ -28,32 +28,23 @@
   @media screen and (orientation: landscape) {
     line-height: 24px;
   }
-  div {
-    width: 90%;
-    text-align: justify;
-    padding: 5px;
-    line-height: 195%;
-    word-spacing: 1.5px;
-    color: black;
-    margin: 4rem 0;
-    p {
-      word-break: break-word;
-      font-size: 1.5rem;
-      letter-spacing: 1.1px;
-      span {
-        color: $blue;
-        &:first-of-type {
-          color: $red;
-        }
-        &:nth-of-type(4) {
-          color: $red;
-        }
-        &:nth-of-type(6) {
-          color: $red;
-        }
-        &:nth-of-type(8) {
-          color: $red;
-        }
+  p {
+    word-break: break-word;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    span {
+      color: $blue;
+      &:first-of-type {
+        color: $red;
+      }
+      &:nth-of-type(4) {
+        color: $red;
+      }
+      &:nth-of-type(6) {
+        color: $red;
+      }
+      &:nth-of-type(8) {
+        color: $red;
       }
     }
   }

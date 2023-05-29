@@ -6,6 +6,9 @@
   height: 115px;
   transform: translateY(-100%);
   z-index: 5;
+  @media (prefers-reduced-motion: reduce) {
+    transform: translateY(0) !important;
+  }
   @media screen and (min-width: 1000px) {
     background-color: $dark-grey;
     max-width: 385px;

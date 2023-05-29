@@ -3,7 +3,7 @@ import TimelineElement from "./TimelineElement";
 import { appData } from "../../data/appData";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
+import { isReduced } from "../../js/animations";
 const Timeline = () => {
   const { timelineContent } = appData;
   const generateTimelineEles = () => {
@@ -26,7 +26,11 @@ const Timeline = () => {
       );
     });
   };
-  return <VerticalTimeline>{generateTimelineEles()}</VerticalTimeline>;
+  return (
+    <VerticalTimeline animate={!isReduced ? true : false} layout={"2-columns"}>
+      {generateTimelineEles()}
+    </VerticalTimeline>
+  );
 };
 
 export default Timeline;

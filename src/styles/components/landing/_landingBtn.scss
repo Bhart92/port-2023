@@ -1,6 +1,7 @@
 .btn {
   min-width: 100px;
   text-align: center;
+  display: inline-block;
   &.disabled {
     border: 1px solid $dark-grey;
     color: #868686;

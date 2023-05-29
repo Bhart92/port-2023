@@ -17,6 +17,10 @@
     width: fit-content;
     top: 20px;
     opacity: 0;
+    @media (prefers-reduced-motion: reduce) {
+      opacity: 1;
+      top: 20px !important;
+    }
     .landing-title {
       margin-bottom: 25px;
       h1 {

@@ -1,5 +1,9 @@
 import { gsap } from "gsap";
+export const isReduced =
+  window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+  window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 export const revealHeader = () => {
+  if (isReduced) return;
   let loadAnimationTl = gsap.timeline();
   loadAnimationTl.to("header", {
     transform: "translate(0, 0)",
@@ -7,6 +11,7 @@ export const revealHeader = () => {
   });
 };
 export const revealLanding = () => {
+  if (isReduced) return;
   let loadAnimationTl = gsap.timeline({ delay: 0.25 });
   loadAnimationTl.to(".landing-hero", {
     top: 0,
@@ -18,8 +23,9 @@ export const revealLanding = () => {
   loadAnimationTl.to("header", { transform: "translate(0, 0)" }, "<.25");
 };
 export const revealDesktopHeader = () => {
-  let loadAnimationTl = gsap.timeline({ delay: 1 });
+  if (isReduced) return;
 
+  let loadAnimationTl = gsap.timeline({ delay: 1 });
   loadAnimationTl.to("header", { transform: "translate(0, 0)" }, "<.25");
 
   loadAnimationTl.to(".nav-link", {
