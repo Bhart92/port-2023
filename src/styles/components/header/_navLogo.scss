@@ -1,4 +1,4 @@
-.desktop-nav-logo {
+.nav-logo {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -9,17 +9,17 @@
   &:active,
   &:focus {
     h1 {
-      color: $blue;
-      border: 3px solid $blue;
+      color: white;
+      border: 3px solid white;
     }
   }
   h1 {
-    border: 3px solid white;
+    border: 3px solid $blue;
     display: inline-block;
     font-size: 5rem;
     padding: 10px 20px;
     text-align: center;
-    color: #fff;
+    color: $blue;
     transition: all 0.35s ease;
     font-size: 48px;
     span {

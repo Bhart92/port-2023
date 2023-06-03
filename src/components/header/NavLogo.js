@@ -6,14 +6,14 @@ const NavLogo = ({ toggle, isOpen }) => {
     return;
   };
   return (
-    <div className="desktop-nav-logo nav-link" onClick={toggleLogo}>
+    <div className="nav-logo nav-link" onClick={toggleLogo}>
       <NavLink to="/">
         <h1>
           B<span>K</span>H
         </h1>
       </NavLink>
 
-      <h2 className="desktop-nav-sub">
+      <h2 className="nav-sub">
         Brandon K. Hart
         <br />
         <span>Web Developer</span>

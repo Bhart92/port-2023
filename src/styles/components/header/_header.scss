@@ -6,6 +6,9 @@
   height: 115px;
   transform: translateY(-100%);
   z-index: 5;
+  @media screen and (min-width: 1000px) {
+    transform: translateY(0);
+  }
   @media (prefers-reduced-motion: reduce) {
     transform: translateY(0) !important;
   }

@@ -1,13 +1,18 @@
 .landing {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: calc(100vh - 115px);
-
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  overflow-y: scroll;
   @media screen and (min-width: 1000px) {
+    justify-content: flex-start;
     height: 100vh;
     width: 90%;
     margin: 0 auto;
+    padding-top: 0;
   }
   @media screen and (orientation: landscape) and (max-height: 600px) {
     margin: 15px auto;
@@ -17,12 +22,26 @@
     width: fit-content;
     top: 20px;
     opacity: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    @media screen and (min-width: 768px) {
+      margin-top: 4.5rem;
+    }
+    @media screen and (min-width: 1000px) {
+      margin-top: 14.5rem;
+    }
     @media (prefers-reduced-motion: reduce) {
       opacity: 1;
       top: 20px !important;
     }
     .landing-title {
       margin-bottom: 25px;
+      @media screen and (min-width: 1000px) {
+        font-size: 1.75rem;
+      }
       h1 {
         span {
           color: $red;

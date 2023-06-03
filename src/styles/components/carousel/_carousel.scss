@@ -1,0 +1,48 @@
+.carousel-wrapper {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem 0;
+  opacity: 0;
+  transition: 0.35s ease all;
+  @media screen and (min-width: 1000px) {
+    position: absolute;
+    bottom: 35px;
+  }
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+  @media screen and (min-width: 1250px) {
+    display: flex;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    display: none !important;
+  }
+  .carousel-hint {
+    height: 55px;
+    width: 255px;
+    position: relative;
+    align-self: center;
+    @media screen and (min-width: 1250px) {
+      align-self: flex-end;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .swiper-initialized {
+    width: 100%;
+    swiper-slide {
+      height: 265px;
+      @media screen and (min-width: 1000px) {
+        height: 255px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

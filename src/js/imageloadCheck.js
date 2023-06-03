@@ -1,5 +1,9 @@
 const onImagesLoaded = (container, event) => {
   const images = container.getElementsByTagName("img");
+  console.log("container");
+  console.log(container);
+  console.log("imgs");
+  console.log(images);
   let loaded = images.length;
   for (let i = 0; i < images.length; i++) {
     if (images[i].complete) {

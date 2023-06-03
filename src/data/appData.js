@@ -1,3 +1,9 @@
+import oswald from "../images/oswald.jpg";
+import brea from "../images/brea.jpg";
+import sb from "../images/sb.jpg";
+import burnie from "../images/burnie.jpg";
+import cornhole from "../images/cornhole.jpg";
+import culver from "../images/culver.jpg";
 export const appData = {
   projects: [
     {
@@ -193,4 +199,5 @@ export const appData = {
       isVideo: false,
     },
   ],
+  images: [brea, sb, oswald, burnie, culver, cornhole],
 };
