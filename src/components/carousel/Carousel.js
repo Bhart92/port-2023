@@ -1,17 +1,8 @@
-import React, { useEffect, useState } from "react";
-import oswald from "../../images/oswald.jpg";
-import avatar from "../../images/avatar.jpeg";
-import brea from "../../images/brea.jpg";
-import sb from "../../images/sb.jpg";
-import burnie from "../../images/burnie.jpg";
-import cornhole from "../../images/cornhole.jpg";
-import culver from "../../images/culver.jpg";
-import homerun from "../../images/homerun.jpg";
+import React from "react";
 import hint from "../../images/carousel-hint.png";
 // import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
 import { isMobile } from "mobile-device-detect";
-import { isReduced } from "../../js/animations";
 import { appData } from "../../data/appData";
 
 // register Swiper custom elements

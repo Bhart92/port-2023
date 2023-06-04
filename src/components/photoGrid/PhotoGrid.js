@@ -11,13 +11,11 @@ const PhotoGrid = () => {
       </div>
 
       <div className="photo-grid-images">
-        {images.map((img, i) => {
-          return (
-            <div className="photo-grid-img">
-              <img src={img} />
-            </div>
-          );
-        })}
+        {images.map((img, i) => (
+          <div className="photo-grid-img">
+            <img src={img} />
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -32,17 +32,15 @@ const TimelineElement = ({
       return <img src={projectImg} alt={projectImgAlt} />;
     }
   };
-  const generateListItems = () => {
-    return (
-      <div className="timeline-element-list">
-        <ul>
-          {courseList.map((course) => {
-            return <li>{course}</li>;
-          })}
-        </ul>
-      </div>
-    );
-  };
+  const generateListItems = () => (
+    <div className="timeline-element-list">
+      <ul>
+        {courseList.map((course) => {
+          return <li>{course}</li>;
+        })}
+      </ul>
+    </div>
+  );
   return (
     <VerticalTimelineElement
       className="timeline-element"

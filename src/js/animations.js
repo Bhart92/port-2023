@@ -9,7 +9,7 @@ export const revealHeader = () => {
 
   let loadAnimationTl;
 
-  if (isMobile) {
+  if (isMobile || window.innerWidth < 1000) {
     loadAnimationTl = gsap.timeline();
 
     loadAnimationTl.to("header", {
