@@ -6,10 +6,7 @@
   margin: 2.5rem 0;
   opacity: 0;
   transition: 0.35s ease all;
-  @media screen and (min-width: 1000px) {
-    position: absolute;
-    bottom: 35px;
-  }
+
   @media screen and (min-width: 600px) {
     display: none;
   }
