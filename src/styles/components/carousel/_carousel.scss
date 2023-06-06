@@ -9,10 +9,10 @@
   opacity: 0;
   transition: 0.35s ease all;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 700px) {
     display: none;
   }
-  @media screen and (min-width: 1250px) {
+  @media screen and (min-width: 1052px) {
     display: flex;
   }
   @media (prefers-reduced-motion: reduce) {

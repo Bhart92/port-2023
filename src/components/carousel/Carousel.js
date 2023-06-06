@@ -11,6 +11,7 @@ register();
 
 const Carousel = () => {
   const { images } = appData;
+  const { imgs } = appData;
   useEffect(() => {
     const swiperEl = document.querySelector("swiper-container");
 
@@ -27,7 +28,10 @@ const Carousel = () => {
         768: {
           slidesPerView: 2,
         },
-        1000: {
+        1050: {
+          slidesPerView: 2,
+        },
+        1300: {
           slidesPerView: 3,
         },
       },
@@ -45,10 +49,12 @@ const Carousel = () => {
     swiperEl.initialize();
   }, []);
   const generateSlides = () =>
-    images.map((img, i) => {
+    imgs.map((img, i) => {
       return (
         <swiper-slide>
-          <img src={img} />
+          <a target="_blank" href={img.url}>
+            <img src={img.src} />
+          </a>
         </swiper-slide>
       );
     });

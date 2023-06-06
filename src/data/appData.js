@@ -4,6 +4,7 @@ import sb from "../images/sb.jpg";
 import burnie from "../images/burnie.jpg";
 import cornhole from "../images/cornhole.jpg";
 import culver from "../images/culver.jpg";
+import three from "../images/threem.jpg";
 export const appData = {
   projects: [
     {
@@ -199,4 +200,34 @@ export const appData = {
     },
   ],
   images: [brea, sb, oswald, burnie, culver, cornhole],
+  imgs: [
+    {
+      src: brea,
+      url: "https://www.triggerxr.com/work/la-brea-season-2-web-ar-experience",
+    },
+    {
+      src: sb,
+      url: "https://www.triggerxr.com/work/super-bowl-halftime-show",
+    },
+    {
+      src: oswald,
+      url: "https://www.triggerxr.com/work/oswald-the-lucky-rabbit-lunar-new-year-ar-greeting-card",
+    },
+    {
+      src: three,
+      url: "https://www.triggerxr.com/work/3m-earthland",
+    },
+    {
+      src: burnie,
+      url: "https://www.triggerxr.com/work/baila-burnie",
+    },
+    {
+      src: culver,
+      url: "https://www.triggerxr.com/work/culver-city-stormwater-project",
+    },
+    {
+      src: cornhole,
+      url: "https://www.triggerxr.com/work/coors-light-tailgate-cornhole-challenge",
+    },
+  ],
 };
