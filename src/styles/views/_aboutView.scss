@@ -20,8 +20,12 @@
 .about-wrapper {
   width: 93%;
   height: 100vh;
-  overflow-y: scroll;
   margin: 0 auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .about-text-container {
   display: flex;

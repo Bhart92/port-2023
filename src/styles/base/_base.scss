@@ -22,6 +22,7 @@ body {
   // &.active {
   //   overflow-y: scroll;
   // }
+
   @media screen and (max-height: 700px) and (orientation: landscape) {
     overflow-y: scroll !important;
   }
