@@ -27,6 +27,9 @@ const Carousel = () => {
         768: {
           slidesPerView: 2,
         },
+        1000: {
+          slidesPerView: 3,
+        },
       },
       on: {
         init() {
