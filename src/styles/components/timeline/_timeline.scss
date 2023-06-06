@@ -15,9 +15,13 @@
   &:before {
     height: 98% !important;
   }
+  .vertical-timeline-element {
+    &:last-of-type {
+      margin-bottom: 11rem !important;
+    }
+  }
   .timeline-element {
     &:last-child {
-      margin-bottom: 11rem !important;
       @media screen and (min-width: 1000px) {
         margin-bottom: 0 !important;
       }
@@ -123,6 +127,7 @@
   }
   .timeline-element-header {
     h2 {
+      margin-bottom: 0;
       @media screen and (min-width: 1000px) {
         font-size: 20px;
       }
