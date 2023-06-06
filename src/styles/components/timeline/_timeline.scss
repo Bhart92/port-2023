@@ -18,6 +18,9 @@
   .timeline-element {
     &:last-child {
       margin-bottom: 11rem !important;
+      @media screen and (min-width: 1000px) {
+        margin-bottom: 0 !important;
+      }
     }
     .vertical-timeline-element-icon {
       img {

@@ -8,6 +8,9 @@
   margin-bottom: 35px;
   display: none;
   opacity: 0;
+  @media screen and (orientation: landscape) {
+    display: none !important;
+  }
   @media (prefers-reduced-motion: reduce) {
     display: flex !important;
     opacity: 0 !important;
@@ -38,7 +41,10 @@
     justify-content: center;
     .photo-grid-img {
       height: 200px;
-      width: 325px;
+      width: 250px;
+      @media screen and (max-width: 765px) {
+        width: 215px;
+      }
       img {
         height: 100%;
         width: 100%;

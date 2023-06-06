@@ -62,6 +62,7 @@ body {
     margin: 80px auto !important;
   }
   @media screen and (orientation: landscape) {
-    margin: 35px 0;
+    margin: 35px auto;
+    width: 93%;
   }
 }
