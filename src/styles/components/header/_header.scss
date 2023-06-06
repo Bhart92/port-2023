@@ -10,6 +10,14 @@
   @media (prefers-reduced-motion: reduce) {
     transform: translateY(0) !important;
   }
+
+  @media screen and (max-height: 650px) {
+    max-width: unset !important;
+    min-width: unset !important;
+    width: 100% !important;
+    height: 125px !important;
+    transform: translateY(0);
+  }
   @media screen and (min-width: 1000px) {
     background-color: $dark-grey;
     max-width: 385px;
@@ -21,9 +29,5 @@
     left: unset;
     right: unset;
     transform: translateY(0);
-  }
-
-  @media screen and (min-width: 1000px) and (max-height: 800px) {
-    height: 100vh;
   }
 }

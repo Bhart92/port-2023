@@ -7,7 +7,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 999);
 
   const getIsMobile = () => {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 1000 || window.innerHeight < 700) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -16,9 +16,11 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("resize", getIsMobile);
   }, []);
+
   useEffect(() => {
     revealHeader();
   }, [isMobile]);
+
   const generateHeaderMarkup = () => {
     if (!isMobile) {
       return <DesktopNav />;
