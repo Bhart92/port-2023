@@ -7,9 +7,6 @@
   @media screen and (min-width: 768px) {
     margin: 0 !important;
   }
-  @media screen and (max-width: 999px) {
-    width: 80% !important;
-  }
   @media screen and (min-width: 1000px) {
     width: 80% !important;
     margin: 0 auto;
@@ -19,6 +16,9 @@
     height: 98% !important;
   }
   .timeline-element {
+    &:last-child {
+      margin-bottom: 11rem !important;
+    }
     .vertical-timeline-element-icon {
       img {
         max-height: 25px;

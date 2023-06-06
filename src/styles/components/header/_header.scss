@@ -5,7 +5,7 @@
   display: block;
   height: 115px;
   transform: translateY(-100%);
-  z-index: 5;
+  z-index: 21;
   @media screen and (min-width: 1000px) {
     transform: translateY(0);
   }
@@ -15,7 +15,7 @@
   @media screen and (min-width: 1000px) {
     background-color: $dark-grey;
     max-width: 385px;
-    min-width: 300px;
+    min-width: 366px;
     width: 385px;
     height: 100vh;
     position: relative;

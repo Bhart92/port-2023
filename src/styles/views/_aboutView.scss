@@ -1,10 +1,10 @@
 .about {
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
+  min-height: 100vh;
 
   overflow-y: scroll;
-  position: relative;
   display: block;
   z-index: 3;
   -ms-overflow-style: none; /* IE and Edge */
@@ -15,6 +15,12 @@
   @media screen and (min-width: 1000px) {
     height: 100vh;
   }
+}
+.about-wrapper {
+  width: 93%;
+  height: 100vh;
+  overflow-y: scroll;
+  margin: 0 auto;
 }
 .about-text-container {
   display: flex;
@@ -32,11 +38,11 @@
   }
   p {
     word-break: break-word;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1.1px;
-    line-height: 30px;
     @media screen and (min-width: 1000px) {
       font-size: 16px;
+      line-height: 31px;
     }
     span {
       color: $blue;

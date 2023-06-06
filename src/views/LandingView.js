@@ -13,10 +13,17 @@ const LandingView = () => {
 
   useEffect(() => {
     const container = document.querySelector(".landing");
+    const body = document.querySelector("body");
+
     onImagesLoaded(container, () => {
       container.classList.add("active");
+      body.classList.add("active");
       setImagesLoaded(true);
     });
+
+    return () => {
+      body.classList.remove("active");
+    };
   }, []);
   useEffect(() => {
     if (imagesLoaded) revealLanding();
@@ -24,6 +31,7 @@ const LandingView = () => {
   return (
     <div className="landing section-body">
       {!imagesLoaded && <LoadingView text={"Loading content..."} />}
+
       <div className="landing-hero">
         <div className="landing-title">
           <h1>
@@ -32,9 +40,10 @@ const LandingView = () => {
           <h2>&lt; Web Developer /&gt;</h2>
         </div>
         <LandingButtons />
+
+        <PhotoGrid />
+        <Carousel />
       </div>
-      <PhotoGrid />
-      <Carousel />
     </div>
   );
 };

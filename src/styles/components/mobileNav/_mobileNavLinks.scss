@@ -11,7 +11,7 @@
   transition: all 0.5s ease;
   padding-bottom: 20px;
   &.active {
-    transform: translateY(0%);
+    transform: translateY(-1%);
   }
   a {
     ion-icon {

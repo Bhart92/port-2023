@@ -13,11 +13,17 @@ const PortfolioView = () => {
   useEffect(() => {
     revealHeader();
     const container = document.querySelector(".portfolio-body-wrapper");
+    const body = document.querySelector("body");
 
     onImagesLoaded(container, () => {
       container.classList.add("active");
+      body.classList.add("active");
       setImagesLoaded(true);
     });
+
+    return () => {
+      body.classList.remove("active");
+    };
   }, []);
 
   return (

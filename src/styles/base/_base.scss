@@ -18,7 +18,10 @@ a {
   transition: all 0.35s ease;
 }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
+  // &.active {
+  //   overflow-y: scroll;
+  // }
   @media screen and (max-height: 700px) and (orientation: landscape) {
     overflow-y: scroll !important;
   }
@@ -42,6 +45,7 @@ body {
   width: 100%;
   height: auto;
   margin-top: 0;
+
   &.overflow {
     overflow: hidden;
   }
@@ -50,13 +54,14 @@ body {
   }
 }
 .section-title {
-  margin: 20px 0;
+  width: 93%;
+  margin: 20px auto;
   transition: all 0.35s ease;
-  @media screen and (orientation: landscape) {
-    margin: 35px 0;
-  }
   @media screen and (min-width: 1000px) {
     text-align: center;
-    margin: 60px auto;
+    margin: 80px auto !important;
+  }
+  @media screen and (orientation: landscape) {
+    margin: 35px 0;
   }
 }
