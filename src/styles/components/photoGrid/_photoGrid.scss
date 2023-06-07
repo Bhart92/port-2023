@@ -13,7 +13,8 @@
   }
   @media (prefers-reduced-motion: reduce) {
     display: flex !important;
-    opacity: 0 !important;
+    opacity: 1 !important;
+    margin: 1rem 0;
   }
   @media screen and (min-width: 1000px) {
     display: none;
@@ -41,9 +42,13 @@
     justify-content: center;
     .photo-grid-img {
       height: 200px;
-      width: 250px;
-      @media screen and (max-width: 765px) {
+      flex-basis: 50%;
+      max-width: 450px;
+      @media screen and (min-width: 765px) {
         width: 215px;
+      }
+      @media screen and (min-width: 1000px) {
+        flex-basis: 38%;
       }
       img {
         height: 100%;
