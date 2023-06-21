@@ -7,7 +7,7 @@ import { isReduced } from "../../js/animations";
 const Timeline = () => {
   const { timelineContent } = appData;
   const generateTimelineEles = () => {
-    return timelineContent.map((timelineEle) => {
+    return timelineContent.map((timelineEle, i) => {
       const { isVideo } = timelineEle;
       return (
         <TimelineElement
@@ -22,6 +22,7 @@ const Timeline = () => {
           url={timelineEle?.url}
           courseList={timelineEle?.courseList}
           isVideo={isVideo}
+          key={i}
         />
       );
     });

@@ -51,7 +51,7 @@ const Carousel = () => {
   const generateSlides = () =>
     imgs.map((img, i) => {
       return (
-        <swiper-slide>
+        <swiper-slide key={img.url}>
           <a target="_blank" href={img.url}>
             <img src={img.src} />
           </a>
@@ -68,7 +68,7 @@ const Carousel = () => {
         centeredSlides="true"
         rewind="true"
         autoplay="true"
-        autoplay-delay={5500}
+        autoplay-delay={4000}
       >
         {generateSlides()}
       </swiper-container>

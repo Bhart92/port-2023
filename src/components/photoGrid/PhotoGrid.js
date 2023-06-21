@@ -12,7 +12,7 @@ const PhotoGrid = () => {
 
       <div className="photo-grid-images">
         {images.map((img, i) => (
-          <div className="photo-grid-img">
+          <div className="photo-grid-img" key={img}>
             <img src={img} />
           </div>
         ))}
