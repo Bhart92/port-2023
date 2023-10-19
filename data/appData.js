@@ -1,10 +1,3 @@
-import oswald from "/public/images/oswald.jpg";
-import brea from "/public/images/brea.jpg";
-import sb from "/public/images/sb.jpg";
-import burnie from "/public/images/burnie.jpg";
-import cornhole from "/public/images/cornhole.jpg";
-import culver from "/public/images/culver.jpg";
-import three from "/public/images/threem.jpg";
 export const appData = {
   projects: [
     {
@@ -66,6 +59,16 @@ export const appData = {
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
       isVideo: true,
       url: "https://www.triggerxr.com/work/super-bowl-halftime-show",
+    },
+    {
+      title: "Trigger | Culver City Stormwater Project",
+      description:
+        "I worked on a significant portion of the UI in this Web AR immersive experience aimed at educating Culver City’s residents about the region and the current public works projects underway.",
+      projectImg: "/images/culver.jpg",
+      imageStatus: false,
+      imageAlt: "Culver City Signage",
+      isVideo: false,
+      url: "https://www.triggerxr.com/work/culver-city-stormwater-project",
     },
     {
       title: "Baila Burnie!",
@@ -159,10 +162,20 @@ export const appData = {
       desc: "Users were digitally transported into SoFi Stadium in Los Angeles to watch Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige, and Kendrick Lamar perform live. The various views allowed fans to get a closer look at the fast-paced Pepsi Super Bowl XLVII Halftime Show.",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
-      date: "Nov 2022 - Jan 2022",
+      date: "Nov 2021 - Jan 2022",
       url: "https://www.triggerxr.com/work/super-bowl-halftime-show",
 
       isVideo: true,
+    },
+    {
+      title: "Trigger | Culver City Stormwater Project",
+      desc: "I worked on a significant portion of the UI in this Web AR immersive experience aimed at educating Culver City’s residents about the region and the current public works projects underway.",
+      projectImg: "/images/culver.jpg",
+      timeLineIcon: "images/display.svg",
+      timeLineIconAlt: "Trigger XR",
+      date: "Nov 2021",
+      url: "https://www.triggerxr.com/work/culver-city-stormwater-project",
+      isVideo: false,
     },
     {
       title: "Trigger | Baila Burnie",
@@ -170,7 +183,7 @@ export const appData = {
       projectImg: "/images/burnie.jpg",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
-      date: "Oct 2021 - Nov 2022",
+      date: "Oct 2021 - Nov 2021",
       url: "https://www.triggerxr.com/work/baila-burnie",
       isVideo: false,
     },
