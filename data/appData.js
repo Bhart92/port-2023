@@ -21,7 +21,7 @@ export const appData = {
       url: "https://www.triggerxr.com/work/oswald-the-lucky-rabbit-lunar-new-year-ar-greeting-card",
     },
     {
-      title: "Avatar Creature Experience (Tablet UI)",
+      title: "Avatar Creature Experience",
       description:
         "I was brought onto this project to develop the tablet version's UI also ensuring it was responsive and cross browser compatible. The tablet version served a special function as it was being used in museums as part of a fundraising event.",
       projectImg: "/images/avatar.jpeg",

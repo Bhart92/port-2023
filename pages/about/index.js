@@ -1,8 +1,29 @@
+"use client";
+
 import Timeline from "@/components/timeline/Timeline";
 import Head from "next/head";
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Loading from "../../components/Loading";
+import onImagesLoaded from "@/utils/imageloadCheck";
 export const siteTitle = "https://brandonhart.dev/about";
 
 const index = () => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const toggleImgLoaded = () => {
+    console.log("images loaded");
+    setImgLoaded(true);
+  };
+  useEffect(() => {
+    async function checkImgs() {
+      const container = document.querySelector(".vertical-timeline");
+      await onImagesLoaded(container, toggleImgLoaded);
+      console.log("imgLoaded");
+      console.log(imgLoaded);
+    }
+    checkImgs();
+    // console.log(imgArr);
+  }, []);
   return (
     <>
       <Head>
@@ -30,7 +51,8 @@ const index = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="h-auto text-2xl m-auto pt-12 w-full flex flex-col items-center">
+
+      <section className="h-auto text-2xl m-auto pt-12 w-full flex flex-col items-center about-wrapper">
         <h1>About</h1>
         <article>
           <p className="text-sm w-9/12 my-6 m-auto leading-7 text-center">
