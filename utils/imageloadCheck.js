@@ -1,8 +1,6 @@
 const onImagesLoaded = (container, event) => {
   return new Promise((resolve) => {
     const images = container.getElementsByTagName("img");
-    console.log(container);
-    console.log(images);
     let loaded = images.length;
     for (let i = 0; i < images.length; i++) {
       if (images[i].complete) {

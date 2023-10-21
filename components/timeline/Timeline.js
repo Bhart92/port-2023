@@ -6,15 +6,13 @@ import "react-vertical-timeline-component/style.min.css";
 import { isReduced } from "../../utils/animations";
 import useIsDesktopSize from "../../utils/useIsDesktopSize.js";
 import dynamic from "next/dynamic";
+import TimelineElement from "./TimelineElement";
 
 const Timeline = () => {
   const { isDesktopSize, isTabletSize } = useIsDesktopSize();
   const { timelineContent } = appData;
 
   const generateTimelineEles = () => {
-    const TimelineElement = dynamic(() => import("./TimelineElement"), {
-      ssr: true,
-    });
     return timelineContent.map((timelineEle, i) => {
       const { isVideo } = timelineEle;
       return (

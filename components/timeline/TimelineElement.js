@@ -37,7 +37,7 @@ const TimelineElement = ({
             src={projectImg}
             width={450}
             height={450}
-            placeholder="blur"
+            placeholder="empty"
             alt="generic img desc"
           />
         </figure>

@@ -52,7 +52,9 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="h-auto text-2xl m-auto pt-12 w-full flex flex-col items-center about-wrapper">
+      <section className="h-auto text-2xl m-auto pt-12 w-full flex flex-col items-center about-wrapper relative">
+        {!imgLoaded && <Loading />}
+
         <h1>About</h1>
         <article>
           <p className="text-sm w-9/12 my-6 m-auto leading-7 text-center">
