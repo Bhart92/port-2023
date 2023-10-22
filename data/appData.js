@@ -54,7 +54,7 @@ export const appData = {
       title: "Super Bowl Pepsi Halftime Show Ultra Pass",
       description:
         "Users were digitally transported into SoFi Stadium in Los Angeles to watch Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige, and Kendrick Lamar perform live. The various views allowed fans to get a closer look at the fast-paced Pepsi Super Bowl XLVII Halftime Show.",
-      projectImg: "/images/sb.jpg",
+      projectImg: "/images/sb.webp",
       imageStatus: false,
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
       isVideo: true,
@@ -198,7 +198,7 @@ export const appData = {
     {
       title: "Trigger | Verizon Portal Projects",
       desc: "I hit the ground running at Trigger and was thrown on the Verizon Portal Experience team. I partook in, and sometimes led the development for events including the Winter X Games and Super Bowl Halftime Show portal experiences.",
-      projectImg: "/images/sb.jpg",
+      projectImg: "/images/sb.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Sept 2021 - Feb 2022",
