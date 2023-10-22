@@ -3,7 +3,7 @@ import React from "react";
 const LandingHero = () => {
   return (
     <>
-      <h1 className="text-2xl font-bold">
+      <h1 className="text-2xl font-bold text-black">
         Hi! <span className="text-amber-800">I'm Brandon</span>
       </h1>
       <h2 className="text-xs text-center lg:text-base">
