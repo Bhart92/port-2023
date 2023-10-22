@@ -20,8 +20,8 @@ const LandingImages = ({ count, setImgsLoaded }) => {
         <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center">
           <figure className=" md:basis-1/3 grow mt-2 md:mt-0">
             <Image
-              src="/images/sb.jpg"
-              priority={lazy}
+              src="/images/sb.webp"
+              // priority={lazy}
               width={450}
               height={450}
               alt="Superbowl Halftime Experience"
@@ -31,7 +31,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           <figure className=" md:basis-1/3 grow">
             <Image
               src="/images/brea.jpg"
-              priority={lazy}
+              // priority={lazy}
               width={450}
               height={450}
               alt="The La Brea Sinkhole Experience"
