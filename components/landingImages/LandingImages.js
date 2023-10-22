@@ -21,9 +21,9 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           <figure className=" md:basis-1/3 grow mt-2 md:mt-0">
             <Image
               src="/images/sb.jpg"
-              priority={true}
-              width={800}
-              height={800}
+              priority={lazy}
+              width={450}
+              height={450}
               alt="Superbowl Halftime Experience"
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
@@ -31,9 +31,9 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           <figure className=" md:basis-1/3 grow">
             <Image
               src="/images/brea.jpg"
-              priority={true}
-              width={800}
-              height={800}
+              priority={lazy}
+              width={450}
+              height={450}
               alt="The La Brea Sinkhole Experience"
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
@@ -42,8 +42,8 @@ const LandingImages = ({ count, setImgsLoaded }) => {
             <Image
               src="/images/culver.jpg"
               priority={true}
-              width={800}
-              height={800}
+              width={450}
+              height={450}
               alt="Culver City Signage"
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
