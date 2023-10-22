@@ -1,11 +1,7 @@
-import useCheckImgsLoaded, {
-  incrementCounter,
-} from "@/utils/useCheckImageLoad";
+import { incrementCounter } from "@/utils/useCheckImageLoad";
 import Image from "next/image";
 
 const Project = ({ item, i, setImgsLoaded, count }) => {
-  console.log(count);
-
   return (
     <>
       <div className=" w-11/12 projects-wrapper m-auto flex justify-center items-center flex-col md:[&:nth-child(even)&_article]:flex-row-reverse md:[&:nth-child(even)&_figure]:mr-0 md:[&:nth-child(even)&_figure]:ml-5 ">

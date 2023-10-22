@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 export const incrementCounter = (count, setImgsLoaded, target) => {
   count.current += 1;
   const images = document.querySelectorAll(`${target}`);
-
   // const images = document.querySelectorAll(".timeline-element-image img");
   checkFinalImage(count.current, images.length, setImgsLoaded);
 };

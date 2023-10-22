@@ -1,45 +1,51 @@
 import Link from "next/link";
 import Image from "next/image";
+import { incrementCounter } from "@/utils/useCheckImageLoad";
 
-const LandingImages = () => {
+const LandingImages = ({ count, setImgsLoaded }) => {
   return (
     <aside className="w-11/12 m-auto flex flex-col">
       <Link href="/portfolio">
-        {" "}
         <figure className="flex justify-end w-full">
           <Image
+            priority={true}
             src="/images/hint.png"
             width={215}
             height={120}
-            alt="Picture of the author"
+            alt="Link to portfolio"
+            placeholder="empty"
+            onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
           />
         </figure>
         <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center">
           <figure className=" md:basis-1/3 grow mt-2 md:mt-0">
-            {" "}
             <Image
               src="/images/sb.jpg"
+              priority={true}
               width={800}
               height={800}
-              alt="Picture of the author"
+              alt="Superbowl Halftime Experience"
+              onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
           <figure className=" md:basis-1/3 grow">
-            {" "}
             <Image
               src="/images/brea.jpg"
+              priority={true}
               width={800}
               height={800}
-              alt="Picture of the author"
+              alt="The La Brea Sinkhole Experience"
+              onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
-          </figure>{" "}
+          </figure>
           <figure className=" md:basis-1/3 grow mb-16">
-            {" "}
             <Image
-              src="/images/brea.jpg"
+              src="/images/culver.jpg"
+              priority={true}
               width={800}
               height={800}
-              alt="Picture of the author"
+              alt="Culver City Signage"
+              onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
         </div>
