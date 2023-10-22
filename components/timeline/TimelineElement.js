@@ -59,7 +59,6 @@ const TimelineElement = ({
         </figure>
       }
     >
-      {" "}
       <div className="timeline-element-header">
         <h2 className="timeline-element text-center text-lg">{title}</h2>
         {creator ? <h3>{creator}</h3> : ""}

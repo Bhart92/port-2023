@@ -9,7 +9,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
         <figure className="flex justify-end w-full">
           <Image
             priority={true}
-            src="/images/hint.png"
+            src="/images/hint.webp"
             width={215}
             height={120}
             alt="Link to portfolio"

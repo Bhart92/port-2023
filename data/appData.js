@@ -4,7 +4,7 @@ export const appData = {
       title: "3M Earthland",
       description:
         "Working as the support developer I provided signficant work on the ui of this project. Users explore the fictional locations that represent 3M’s major subsidiaries: Japan, Germany, Mexico, US and South Korea.",
-      projectImg: "/images/threem.jpg",
+      projectImg: "/images/threem.webp",
       imageStatus: false,
       imageAlt: "3M Earthland",
       isVideo: false,
@@ -14,7 +14,7 @@ export const appData = {
       title: "Lunar New Year",
       description:
         "I worked as a support developer when the lead went on vacation. In celebration of the Lunar New Year (Year of the Rabbit) and 100 years of Disney, we developed a customizable augmented reality (AR) greeting card generator.",
-      projectImg: "/images/oswald.jpg",
+      projectImg: "/images/oswald.webp",
       imageStatus: false,
       imageAlt: "Lunar New Year (Support dev)",
       isVideo: false,
@@ -24,7 +24,7 @@ export const appData = {
       title: "Avatar Creature Experience",
       description:
         "I was brought onto this project to develop the tablet version's UI also ensuring it was responsive and cross browser compatible. The tablet version served a special function as it was being used in museums as part of a fundraising event.",
-      projectImg: "/images/avatar.jpeg",
+      projectImg: "/images/avatar.webp",
       imageStatus: false,
       imageAlt: "Avatar Creature Experience (Tablet UI)",
       isVideo: false,
@@ -34,7 +34,7 @@ export const appData = {
       title: "The La Brea Sinkhole Experience",
       description:
         "We developed a first-of-its-kind creative AR experience to promote the second season of the top-rated TV show La Brea in partnership with NBCUniversal. The web app experience allows users to place an interactive AR sinkhole in their personal environment.",
-      projectImg: "/images/brea.jpg",
+      projectImg: "/images/brea.webp",
       imageStatus: false,
       imageAlt: "The La Brea Sinkhole Experiencep",
       isVideo: false,
@@ -44,7 +44,7 @@ export const appData = {
       title: "The PureLeaf Experience",
       description:
         "I led the development of this web app for PepsiCo and PureLeaf. This interactive project showcased all of the PureLeaf tea flavors in augmented reality, ultimately entering users into a sweepstakes.",
-      projectImg: "/images/pepsi.jpg",
+      projectImg: "/images/pepsi.webp",
       imageStatus: false,
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
       isVideo: true,
@@ -64,7 +64,7 @@ export const appData = {
       title: "Trigger | Culver City Stormwater Project",
       description:
         "I worked on a significant portion of the UI in this Web AR immersive experience aimed at educating Culver City’s residents about the region and the current public works projects underway.",
-      projectImg: "/images/culver.jpg",
+      projectImg: "/images/culver.webp",
       imageStatus: false,
       imageAlt: "Culver City Signage",
       isVideo: false,
@@ -74,7 +74,7 @@ export const appData = {
       title: "Baila Burnie!",
       description:
         "This project for AT&T and Miami Heat revolved around Burnie, the Miami Heat mascot. I provided support in resolving any reported bugs and did a significant amount of ui development.",
-      projectImg: "/images/burnie.jpg",
+      projectImg: "/images/burnie.webp",
       imageStatus: false,
       imageAlt: "Baila Burnie!",
       isVideo: false,
@@ -83,7 +83,7 @@ export const appData = {
   ],
   timelineContent: [
     {
-      title: "Learning new tech and continuing to grow",
+      title: "Learning new tech...",
       desc: "I'm currently learning NextJS, Typescript, and Tailwind CSS. I love to expand my skillset and offer new services to my clients. I'm currently accepting new projects and full time opportunities.",
       timeLineIcon: "/images/htmlBracket.svg",
       timeLineIconAlt: "html tags",
@@ -101,7 +101,7 @@ export const appData = {
     {
       title: "Trigger | 3M Earthland",
       desc: "Working as the support developer I provided signficant work on the ui of this project. Users explore the fictional locations that represent 3M’s major subsidiaries: Japan, Germany, Mexico, US and South Korea.",
-      projectImg: "/images/threem.jpg",
+      projectImg: "/images/threem.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Mar 2023",
@@ -111,7 +111,7 @@ export const appData = {
     {
       title: "Trigger | Lunar New Year",
       desc: "Upon my return I was thrown onto a project as a support developer when the lead went on vacation. In celebration of the Lunar New Year (Year of the Rabbit) and 100 years of Disney, we developed a customizable augmented reality (AR) greeting card generator.",
-      projectImg: "/images/oswald.jpg",
+      projectImg: "/images/oswald.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Feb 2023",
@@ -129,7 +129,7 @@ export const appData = {
     {
       title: "Trigger | Avatar Creature Experience",
       desc: "I was brought onto this project to develop the tablet version's UI also ensuring it was responsive and cross browser compatible. The tablet version served a special function as it was being used in museums as part of a fundraising event.",
-      projectImg: "/images/avatar.jpeg",
+      projectImg: "/images/avatar.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Sept 2022 - Dec 2022",
@@ -139,7 +139,7 @@ export const appData = {
     {
       title: "Trigger | The La Brea Sinkhole Experience",
       desc: "Developed a first-of-its-kind creative AR experience to promote the second season of the top-rated TV show La Brea in partnership with NBCUniversal. The web app experience allows users to place an interactive AR sinkhole in their personal environment.",
-      projectImg: "/images/brea.jpg",
+      projectImg: "/images/brea.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Sept 2022 - Nov 2022",
@@ -150,7 +150,7 @@ export const appData = {
     {
       title: "Trigger | The PureLeaf Experience",
       desc: "I led the development of The PureLeaf Experience for PepsiCo. This was the first project I led and it came in on time and under budget. This experience showcased all of the PureLeaf tea flavors and allowed users to enter a sweepstakes.",
-      projectImg: "/images/pepsi.jpg",
+      projectImg: "/images/pepsi.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Feb 2022 - Mar 2022",
@@ -170,7 +170,7 @@ export const appData = {
     {
       title: "Trigger | Culver City Stormwater Project",
       desc: "I worked on a significant portion of the UI in this Web AR immersive experience aimed at educating Culver City’s residents about the region and the current public works projects underway.",
-      projectImg: "/images/culver.jpg",
+      projectImg: "/images/culver.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Nov 2021",
@@ -180,7 +180,7 @@ export const appData = {
     {
       title: "Trigger | Baila Burnie",
       desc: "This project for AT&T and Miami Heat revolved around Burnie, the Miami Heat mascot. I provided support in resolving any reported bugs and did a significant amount of ui development.",
-      projectImg: "/images/burnie.jpg",
+      projectImg: "/images/burnie.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Oct 2021 - Nov 2021",
@@ -235,7 +235,7 @@ export const appData = {
     {
       title: "Freelancing",
       desc: "I was feeling confident in my skills at this point and decided I wanted to start freelancing. I finally started to make some money with the skills I was developing.",
-      timeLineIcon: "/images/htmlBracket.svg",
+      timeLineIcon: "/images/display.svg",
       timeLineIconAlt: "Udemy.com",
       date: "2018 - 2019",
       isVideo: false,
@@ -243,15 +243,15 @@ export const appData = {
     {
       title: "Building a foundation",
       desc: "I completed several foundational HTML, CSS, and Javascript courses across various platforms. I wanted to learn React so I picked up The Complete React Developer course by Andrew Meed. It was comprehensive and taught me a lot about React and JavaScript. After completing it I learned just how much I enjoyed working with the React ecosystem.",
-      timeLineIcon: "/images/udemy.svg",
-      timeLineIconAlt: "Udemy",
+      timeLineIcon: "/images/htmlBracket.svg",
+      timeLineIconAlt: "HTML brackets",
       date: "2018",
       isVideo: false,
     },
     {
       title: "I began learning part time",
       desc: "I met an individual while performing an appraisal inspection who suggested I look into Javascript. I had expressed an interest in coding, but difficulty knowing where to start. This day acted as a catalyst for me and ultmately changed my life. I went home that night and signed up for Colt Steele's Web Developer Bootcamp.",
-      timeLineIcon: "/images/udemy.svg",
+      timeLineIcon: "/images/udemy.webp",
       timeLineIconAlt: "UDemy",
       date: "2018",
       creator: "Udemy | StudioWeb | Coursera",

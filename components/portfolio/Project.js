@@ -12,8 +12,8 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
               priority={true}
               className="m-auto w-full flex items-center justify-center md:mr-5 md:basis-1/2"
               src={item.projectImg}
-              width={450}
-              height={450}
+              width={250}
+              height={250}
               alt={item.imageAlt}
               placeholder="empty"
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}

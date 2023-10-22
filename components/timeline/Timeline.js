@@ -3,7 +3,6 @@
 import { appData } from "../../data/appData";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { isReduced } from "../../utils/animations";
 import useIsDesktopSize from "../../utils/useIsDesktopSize.js";
 import TimelineElement from "./TimelineElement";
 
@@ -35,7 +34,7 @@ const Timeline = ({ count, imgsLoaded, setImgsLoaded }) => {
   };
   return (
     <VerticalTimeline
-      animate={!isReduced ? true : false}
+      animate={false}
       layout={isDesktopSize || isTabletSize ? "2-columns" : "1-column"}
     >
       {generateTimelineEles()}
