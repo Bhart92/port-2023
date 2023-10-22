@@ -21,7 +21,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           <figure className=" md:basis-1/3 grow mt-2 md:mt-0">
             <Image
               src="/images/sb.webp"
-              // priority={lazy}
+              priority={true}
               width={450}
               height={450}
               alt="Superbowl Halftime Experience"
@@ -31,7 +31,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           <figure className=" md:basis-1/3 grow">
             <Image
               src="/images/brea.jpg"
-              // priority={lazy}
+              priority={true}
               width={450}
               height={450}
               alt="The La Brea Sinkhole Experience"
