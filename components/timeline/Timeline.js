@@ -5,16 +5,14 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { isReduced } from "../../utils/animations";
 import useIsDesktopSize from "../../utils/useIsDesktopSize.js";
-import dynamic from "next/dynamic";
 import TimelineElement from "./TimelineElement";
 
-const Timeline = () => {
+const Timeline = ({ count, imgsLoaded, setImgsLoaded }) => {
   const { isDesktopSize, isTabletSize } = useIsDesktopSize();
   const { timelineContent } = appData;
 
   const generateTimelineEles = () => {
     return timelineContent.map((timelineEle, i) => {
-      const { isVideo } = timelineEle;
       return (
         <TimelineElement
           title={timelineEle.title}
@@ -27,8 +25,10 @@ const Timeline = () => {
           creator={timelineEle?.creator}
           url={timelineEle?.url}
           courseList={timelineEle?.courseList}
-          isVideo={isVideo}
           key={i}
+          count={count}
+          setImgsLoaded={setImgsLoaded}
+          imgsLoaded={imgsLoaded}
         />
       );
     });

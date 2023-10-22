@@ -1,3 +1,6 @@
+"use client";
+
+import { incrementCounter } from "@/utils/useCheckImageLoad";
 import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
@@ -12,7 +15,8 @@ const TimelineElement = ({
   projectImgAlt,
   url,
   courseList,
-  isVideo,
+  count,
+  setImgsLoaded,
 }) => {
   const contentStyles = {
     background: "#FFF",
@@ -20,30 +24,7 @@ const TimelineElement = ({
     borderRadius: "25px",
     borderBottom: "none",
   };
-  const generateMedia = () => {
-    if (isVideo) {
-      return (
-        <figure>
-          <video controls>
-            <source src={projectImg} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </figure>
-      );
-    } else {
-      return (
-        <figure className="basis-1/2 flex items-align justify-start mr-5">
-          <Image
-            src={projectImg}
-            width={450}
-            height={450}
-            placeholder="empty"
-            alt="generic img desc"
-          />
-        </figure>
-      );
-    }
-  };
+
   const generateListItems = () => (
     <div className="timeline-element-list">
       <ul>
@@ -91,7 +72,23 @@ const TimelineElement = ({
       {projectImg ? (
         <div className="timeline-element-image">
           <a target="_blank" href={url}>
-            {generateMedia()}
+            <figure className="basis-1/2 flex items-align justify-start mr-5">
+              <Image
+                priority={true}
+                placeholder="empty"
+                src={projectImg}
+                width={450}
+                height={450}
+                alt={projectImgAlt}
+                onLoad={() => {
+                  incrementCounter(
+                    count,
+                    setImgsLoaded,
+                    ".timeline-element-image img"
+                  );
+                }}
+              />
+            </figure>
           </a>
         </div>
       ) : (

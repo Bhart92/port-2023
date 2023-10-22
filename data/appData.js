@@ -44,7 +44,7 @@ export const appData = {
       title: "The PureLeaf Experience",
       description:
         "I led the development of this web app for PepsiCo and PureLeaf. This interactive project showcased all of the PureLeaf tea flavors in augmented reality, ultimately entering users into a sweepstakes.",
-      projectImg: "/images/pureleaf.mp4",
+      projectImg: "/images/pepsi.jpg",
       imageStatus: false,
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
       isVideo: true,
@@ -54,7 +54,7 @@ export const appData = {
       title: "Super Bowl Pepsi Halftime Show Ultra Pass",
       description:
         "Users were digitally transported into SoFi Stadium in Los Angeles to watch Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige, and Kendrick Lamar perform live. The various views allowed fans to get a closer look at the fast-paced Pepsi Super Bowl XLVII Halftime Show.",
-      projectImg: "/images/sb.mp4",
+      projectImg: "/images/sb.jpg",
       imageStatus: false,
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
       isVideo: true,
@@ -150,7 +150,7 @@ export const appData = {
     {
       title: "Trigger | The PureLeaf Experience",
       desc: "I led the development of The PureLeaf Experience for PepsiCo. This was the first project I led and it came in on time and under budget. This experience showcased all of the PureLeaf tea flavors and allowed users to enter a sweepstakes.",
-      projectImg: "/images/pureleaf.mp4",
+      projectImg: "/images/pepsi.jpg",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Feb 2022 - Mar 2022",
@@ -198,7 +198,7 @@ export const appData = {
     {
       title: "Trigger | Verizon Portal Projects",
       desc: "I hit the ground running at Trigger and was thrown on the Verizon Portal Experience team. I partook in, and sometimes led the development for events including the Winter X Games and Super Bowl Halftime Show portal experiences.",
-      projectImg: "/images/sb.mp4",
+      projectImg: "/images/sb.jpg",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Trigger XR",
       date: "Sept 2021 - Feb 2022",

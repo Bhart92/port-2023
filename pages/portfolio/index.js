@@ -1,39 +1,24 @@
 "use client";
-import { useEffect, useState } from "react";
 import { appData } from "../../data/appData.js";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 export const siteTitle = "https://brandonhart.dev/portfolio";
-
+import Project from "../../components/portfolio/Project.js";
 import Loading from "../../components/Loading";
-import onImagesLoaded from "@/utils/imageloadCheck";
+import { createRef } from "@/utils/useCheckImageLoad.js";
 const index = () => {
-  const [imgLoaded, setImgLoaded] = useState(false);
-  const toggleImgLoaded = () => {
-    console.log("images loaded");
-    setImgLoaded(true);
-  };
-  useEffect(() => {
-    async function checkImgs() {
-      const container = document.querySelector(".portfolio-wrapper");
-      await onImagesLoaded(container, toggleImgLoaded);
-      console.log("imgLoaded");
-      console.log(imgLoaded);
-    }
-    checkImgs();
-    // console.log(imgArr);
-  }, []);
+  const { count, imgsLoaded, setImgsLoaded } = createRef();
+
   const generateProjects = () => {
-    const Project = dynamic(
-      () => import("../../components/portfolio/Project.js"),
-      {
-        ssr: true,
-      }
-    );
     return (
       <div className="images">
         {appData.projects.map((item, i) => (
-          <Project item={item} i={i} key={i} />
+          <Project
+            item={item}
+            i={i}
+            key={i}
+            setImgsLoaded={setImgsLoaded}
+            count={count}
+          />
         ))}
       </div>
     );
@@ -65,8 +50,9 @@ const index = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <section className="relative portfolio-wrapper text-2xl">
-        {!imgLoaded && <Loading />}
+        {!imgsLoaded && <Loading />}
 
         <div className="portfolio mt-12 mb-16">{generateProjects()}</div>
       </section>
