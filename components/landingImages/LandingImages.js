@@ -64,7 +64,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow mb-16 md:min-h-[200px] md:aspect-auto md:mb-0">
             <Image
               src="/images/culver.webp"
-              // priority={true}
+              priority={true}
               fill={true}
               placeholder="blur"
               objectFit="cover/contain"
