@@ -44,7 +44,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               width={450}
               height={450}
               alt="Superbowl Halftime Experience"
-              onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
+              // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
           <figure className="relative aspect-[3/1] w-full h-auto md:basis-1/3 grow">
@@ -55,7 +55,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               width={450}
               height={450}
               alt="The La Brea Sinkhole Experience"
-              onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
+              // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
           <figure className="relative aspect-[3/1] w-full h-auto md:basis-1/3 grow mb-16">
@@ -66,7 +66,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               width={450}
               height={450}
               alt="Culver City Signage"
-              onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
+              // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
         </div>
