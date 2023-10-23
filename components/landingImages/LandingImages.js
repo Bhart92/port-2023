@@ -37,7 +37,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           />
         </figure>
         <div className=" flex flex-col md:flex-row md:flex-wrap md:justify-center">
-          <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow mt-2 md:mt-0">
+          {/* <figure className="relative w-full h-auto md:basis-1/3 grow mt-2 md:mt-0">
             <Image
               src="/images/sb.webp"
               priority={true}
@@ -46,8 +46,8 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               alt="Superbowl Halftime Experience"
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
-          </figure>
-          <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow">
+          </figure> */}
+          <figure className="relative w-full h-auto md:basis-1/3 grow">
             <Image
               src="/images/brea.webp"
               priority={true}
@@ -57,7 +57,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
-          <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow mb-16">
+          <figure className="relative w-full h-auto md:basis-1/3 grow mb-16">
             <Image
               src="/images/culver.webp"
               priority={true}
