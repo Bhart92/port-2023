@@ -43,7 +43,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               priority={true}
               fill={true}
               placeholder="blur"
-              objectFit="cover/contain"
+              objectFit="cover"
               blurDataURL={rgbDataURL(255, 255, 255)}
               alt="Superbowl Halftime Experience"
               // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
@@ -55,7 +55,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               priority={true}
               fill={true}
               placeholder="blur"
-              objectFit="cover/contain"
+              objectFit="cover"
               blurDataURL={rgbDataURL(255, 255, 255)}
               alt="The La Brea Sinkhole Experience"
               // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
@@ -67,7 +67,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               priority={true}
               fill={true}
               placeholder="blur"
-              objectFit="cover/contain"
+              objectFit="cover"
               blurDataURL={rgbDataURL(255, 255, 255)}
               alt="Culver City Signage"
               // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
