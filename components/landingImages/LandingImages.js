@@ -36,8 +36,8 @@ const LandingImages = ({ count, setImgsLoaded }) => {
             onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
           />
         </figure>
-        <div className="aspect-[5/11] relative w-full h-auto flex flex-col md:flex-row md:flex-wrap md:justify-center">
-          <figure className="relative aspect-[3/2] w-full h-auto grow mt-2 md:mt-0">
+        <div className="aspect-auto relative w-full h-auto flex flex-col md:flex-row md:flex-wrap md:justify-center">
+          <figure className="relative aspect-[3/2] w-full h-auto grow mt-2 sm:aspect-[5/3]  md:basis-1/3 md:mt-0">
             <Image
               src="/images/sb.webp"
               priority={true}
@@ -48,7 +48,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
-          <figure className="relative aspect-[3/2] w-full h-auto md:basis-1/3 grow">
+          <figure className="relative aspect-[3/2] w-full h-auto  sm:aspect-[5/3] md:basis-1/3 grow">
             <Image
               src="/images/brea.webp"
               priority={true}
@@ -59,7 +59,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
-          <figure className="relative aspect-[3/2] w-full h-auto md:basis-1/3 grow mb-16">
+          <figure className="relative aspect-[3/2] w-full h-auto sm:aspect-[5/3] md:basis-1/3 grow mb-16">
             <Image
               src="/images/culver.webp"
               // priority={true}
