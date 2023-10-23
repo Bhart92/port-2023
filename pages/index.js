@@ -11,19 +11,19 @@ export default function Home() {
 
   return (
     <section className="relative flex flex-col items-center mt-12 md:h-screen md:mt-0 md:justify-center lg:mt-0 lg:justify-center">
-      {!imgsLoaded && <Loading />}
-      <div
+      {/* {!imgsLoaded && <Loading />} */}
+      {/* <div
         className={` flex flex-col items-center ${imgsLoaded ? "" : "hidden"}`}
-      >
-        <LandingHero />
-        <div className="mt-8 flex flex-col">
-          <LandingImages
-            count={count}
-            imgsLoaded={imgsLoaded}
-            setImgsLoaded={setImgsLoaded}
-          />
-        </div>
+      > */}
+      <LandingHero />
+      <div className="mt-8 flex flex-col">
+        <LandingImages
+          count={count}
+          imgsLoaded={imgsLoaded}
+          setImgsLoaded={setImgsLoaded}
+        />
       </div>
+      {/* </div> */}
     </section>
   );
 }

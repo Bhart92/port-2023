@@ -49,6 +49,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           </figure> */}
           <figure className="relative w-full h-auto md:basis-1/3 grow">
             <Image
+              placeholder="empty"
               src="/images/brea.webp"
               priority={true}
               width={450}
@@ -61,6 +62,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
             <Image
               src="/images/culver.webp"
               priority={true}
+              placeholder="empty"
               width={450}
               height={450}
               alt="Culver City Signage"
