@@ -36,35 +36,38 @@ const LandingImages = ({ count, setImgsLoaded }) => {
             onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
           />
         </figure>
-        <div className="aspect-auto relative w-full h-auto flex flex-col md:flex-row md:flex-wrap md:justify-center">
-          <figure className="relative aspect-[3/2] w-full h-auto grow mt-2 sm:aspect-[5/3]  md:basis-1/3 md:mt-0">
+        <div className=" relative w-full h-auto flex flex-col md:flex-row md:flex-wrap md:justify-center">
+          <figure className="relative aspect-square w-full h-auto grow mt-2  md:basis-1/3 md:mt-0 md:min-h-[200px] md:aspect-auto">
             <Image
               src="/images/sb.webp"
               priority={true}
               fill={true}
               placeholder="blur"
+              objectFit="cover/contain"
               blurDataURL={rgbDataURL(255, 255, 255)}
               alt="Superbowl Halftime Experience"
               // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
-          <figure className="relative aspect-[3/2] w-full h-auto  sm:aspect-[5/3] md:basis-1/3 grow">
+          <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow md:min-h-[200px] md:aspect-auto">
             <Image
               src="/images/brea.webp"
               priority={true}
               fill={true}
               placeholder="blur"
+              objectFit="cover/contain"
               blurDataURL={rgbDataURL(255, 255, 255)}
               alt="The La Brea Sinkhole Experience"
               // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
-          <figure className="relative aspect-[3/2] w-full h-auto sm:aspect-[5/3] md:basis-1/3 grow mb-16">
+          <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow mb-16 md:min-h-[200px] md:aspect-auto md:mb-0">
             <Image
               src="/images/culver.webp"
               // priority={true}
               fill={true}
               placeholder="blur"
+              objectFit="cover/contain"
               blurDataURL={rgbDataURL(255, 255, 255)}
               alt="Culver City Signage"
               // onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
