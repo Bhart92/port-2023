@@ -47,7 +47,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure> */}
-          <figure className="relative w-full h-auto md:basis-1/3 grow">
+          <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow">
             <Image
               placeholder="empty"
               src="/images/brea.webp"
@@ -58,7 +58,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
-          <figure className="relative w-full h-auto md:basis-1/3 grow mb-16">
+          <figure className="relative aspect-square w-full h-auto md:basis-1/3 grow mb-16">
             <Image
               src="/images/culver.webp"
               priority={true}
