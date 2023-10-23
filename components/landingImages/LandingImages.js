@@ -49,7 +49,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           </figure>
           <figure className=" md:basis-1/3 grow">
             <Image
-              src="/images/brea.jpg"
+              src="/images/brea.webp"
               priority={true}
               width={450}
               height={450}
@@ -59,7 +59,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           </figure>
           <figure className=" md:basis-1/3 grow mb-16">
             <Image
-              src="/images/culver.jpg"
+              src="/images/culver.webp"
               priority={true}
               width={450}
               height={450}
