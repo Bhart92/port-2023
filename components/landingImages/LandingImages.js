@@ -37,16 +37,16 @@ const LandingImages = ({ count, setImgsLoaded }) => {
           />
         </figure>
         <div className="relative w-full h-auto flex flex-col md:flex-row md:flex-wrap md:justify-center">
-          <figure className="relative aspect-[3/2] w-full h-auto md:basis-1/3 grow mt-2 md:mt-0">
+          <figure className="relative aspect-[3/2] w-full h-auto grow mt-2 md:mt-0">
             <Image
-              src="/images/sb.webp"
+              src="/images/landingImages.webp"
               priority={true}
               fill={true}
               alt="Superbowl Halftime Experience"
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
           </figure>
-          <figure className="relative aspect-[3/2] w-full h-auto md:basis-1/3 grow">
+          {/* <figure className="relative aspect-[3/2] w-full h-auto md:basis-1/3 grow">
             <Image
               placeholder="empty"
               src="/images/brea.webp"
@@ -65,7 +65,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
               alt="Culver City Signage"
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
-          </figure>
+          </figure> */}
         </div>
       </Link>
     </aside>
