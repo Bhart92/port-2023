@@ -16,7 +16,7 @@ export default function Home() {
         className={` flex flex-col items-center ${imgsLoaded ? "" : "hidden"}`}
       > */}
       <LandingHero />
-      <div className="mt-8 flex flex-col">
+      <div className="mt-8 flex flex-col w-full">
         <LandingImages
           count={count}
           imgsLoaded={imgsLoaded}
