@@ -36,7 +36,7 @@ const LandingImages = ({ count, setImgsLoaded }) => {
             onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
           />
         </figure>
-        <div className="relative w-full h-auto flex flex-col md:flex-row md:flex-wrap md:justify-center">
+        <div className="aspect-[5/11] relative w-full h-auto flex flex-col md:flex-row md:flex-wrap md:justify-center">
           <figure className="relative aspect-[3/2] w-full h-auto grow mt-2 md:mt-0">
             <Image
               src="/images/sb.webp"
