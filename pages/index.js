@@ -3,8 +3,9 @@ import LandingImages from "../components/landingImages/LandingImages";
 import LandingHero from "../components/landing/LandingHero";
 import { createRef } from "@/utils/useCheckImageLoad.js";
 import Loading from "@/components/Loading";
-
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
+export const siteTitle = "https://brandonhart.dev/";
 
 export default function Home() {
   const { count, imgsLoaded, setImgsLoaded } = createRef();
