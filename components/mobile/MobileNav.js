@@ -3,7 +3,7 @@ import Hamburger from "hamburger-react";
 const MobileNav = ({ isOpen, setOpen }) => {
   return (
     <div className="z-30 text-white flex justify-center flex-col w-11/12 h-3/4 m-auto ">
-      <Hamburger toggled={isOpen} toggle={setOpen} aria-label="mobile nav hamburger icon"/>
+      <Hamburger toggled={isOpen} toggle={setOpen} label={"mobile nav hamburger icon"}/>
     </div>
   );
 };
