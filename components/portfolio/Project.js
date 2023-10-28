@@ -16,10 +16,6 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
               height={250}
               alt={item.imageAlt}
               placeholder="empty"
-              style={{
-                maxWidth: "400px",
-                height: "auto",
-              }}
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
 
