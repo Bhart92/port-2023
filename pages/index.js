@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
+import dynamic from "next/dynamic";
 // import LandingImages from "../components/landingImages/LandingImages";
-import LandingHero from "../components/landing/LandingHero";
 import { createRef } from "@/utils/useCheckImageLoad.js";
 import Loading from "@/components/Loading";
+const LandingHero = dynamic(() => import("../components/landing/LandingHero"));
 
 const inter = Inter({ subsets: ["latin"] });
 
