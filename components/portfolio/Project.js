@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Script from "next/script";
 
-import { incrementCounter } from "../../utils/useCheckImageLoad.js";
 const Project = ({ item, i, setImgsLoaded, count }) => {
   return (
     <>
@@ -22,8 +21,11 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
                 alt={item.imageAlt}
                 placeholder="blur"
                 blurDataURL={item.projectImg}
-                onLoad={() => {
-                  incrementCounter(count, setImgsLoaded, "img", 1);
+                onLoad={async () => {
+                  const { incrementCounter } = await import(
+                    "../../utils/useCheckImageLoad.js"
+                  );
+                  incrementCounter(count, setImgsLoaded, "img", 2);
                   console.log(count);
                 }}
               />
