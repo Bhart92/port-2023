@@ -1,20 +1,13 @@
 import { appData } from "../../data/appData.js";
 import Head from "next/head";
-import dynamic from "next/dynamic";
-
 import { createRef } from "../../utils/useCheckImageLoad.js";
 export const siteTitle = "https://brandonhart.dev/portfolio";
+import Project from "../../components/portfolio/Project.js";
 import Loading from "../../components/Loading";
 const index = () => {
   const { count, imgsLoaded, setImgsLoaded } = createRef();
 
   const generateProjects = () => {
-    const Project = dynamic(
-      () => import("../../components/portfolio/Project.js"),
-      {
-        ssr: false,
-      },
-    );
     return (
       <div className="images [&>*:nth-child(1)]:mb-6">
         {appData.projects.map((item, i) => (
