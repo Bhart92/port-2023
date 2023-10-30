@@ -69,7 +69,7 @@ const TimelineElement = ({
           <a href={url ? url : ""} target="_blank">
             <figure className="basis-1/2 flex items-center justify-center mt-2 md:justify-start md:mr-5">
               <Image
-                priority={false}
+                priority={true}
                 placeholder="blur"
                 blurDataURL={projectImg}
                 src={projectImg}
