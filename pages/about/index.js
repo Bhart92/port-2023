@@ -37,7 +37,6 @@ const index = () => {
       </Head>
 
       <section className="text-black h-auto text-2xl m-auto pt-12 w-full flex flex-col items-center about-wrapper relative">
-        {!imgsLoaded && <Loading />}
         <h1>About</h1>
         <article>
           <p className="text-sm w-9/12 my-6 m-auto leading-7 text-center">

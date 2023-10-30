@@ -15,7 +15,8 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
               width={250}
               height={250}
               alt={item.imageAlt}
-              placeholder="empty"
+              placeholder="blur"
+              blurDataURL={item.projectImg}
               onLoad={() => incrementCounter(count, setImgsLoaded, "img")}
             />
 
