@@ -3,22 +3,12 @@ import { appData } from "../../data/appData.js";
 import Head from "next/head";
 export const siteTitle = "https://brandonhart.dev/portfolio";
 import Project from "../../components/portfolio/Project.js";
-import Loading from "../../components/Loading";
-import { createRef } from "@/utils/useCheckImageLoad.js";
 const index = () => {
-  const { count, imgsLoaded, setImgsLoaded } = createRef();
-
   const generateProjects = () => {
     return (
       <div className="images">
         {appData.projects.map((item, i) => (
-          <Project
-            item={item}
-            i={i}
-            key={i}
-            setImgsLoaded={setImgsLoaded}
-            count={count}
-          />
+          <Project item={item} i={i} key={i} />
         ))}
       </div>
     );
