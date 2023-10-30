@@ -1,7 +1,6 @@
 import { appData } from "../../data/appData";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { createRef } from "../../utils/useCheckImageLoad.js";
 import useIsDesktopSize from "../../utils/useIsDesktopSize.js";
 import TimelineElement from "./TimelineElement";
 import styles from "./timeline.module.scss";
@@ -25,9 +24,6 @@ const Timeline = ({ count, imgsLoaded, setImgsLoaded }) => {
           courseList={timelineEle?.courseList}
           key={i}
           lazy={timelineEle.lazy}
-          count={count}
-          imgsLoaded={imgsLoaded}
-          setImgsLoaded={setImgsLoaded}
         />
       );
     });
