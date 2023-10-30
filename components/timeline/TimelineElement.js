@@ -43,7 +43,6 @@ const TimelineElement = ({
       icon={
         <figure>
           <Image
-            priority={lazy}
             src={timeLineIcon}
             width={20}
             height={20}
@@ -70,7 +69,7 @@ const TimelineElement = ({
           <a target="_blank" href={url}>
             <figure className="basis-1/2 flex items-center justify-center mt-2 md:justify-start md:mr-5">
               <Image
-                priority={true}
+                priority={false}
                 placeholder="blur"
                 blurDataURL={projectImg}
                 src={projectImg}
@@ -79,12 +78,6 @@ const TimelineElement = ({
                 alt={imageAlt}
                 placeholder="blur"
                 blurDataURL={projectImg}
-                onLoad={async () => {
-                  const { incrementCounter } = await import(
-                    "../../utils/useCheckImageLoad.js"
-                  );
-                  incrementCounter(count, setImgsLoaded, "img", 1);
-                }}
               />
             </figure>
           </a>

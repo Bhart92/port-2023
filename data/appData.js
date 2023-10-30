@@ -116,7 +116,7 @@ export const appData = {
       date: "Mar 2023",
       url: "https://www.triggerxr.com/work/3m-earthland",
       isVideo: false,
-      lazy: true,
+      lazy: false,
     },
     {
       title: "Trigger | Lunar New Year",
