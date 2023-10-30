@@ -20,6 +20,12 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
                 alt={item.imageAlt}
                 placeholder="blur"
                 blurDataURL={item.projectImg}
+                onLoad={async () => {
+                  const { incrementCounter } = await import(
+                    "../../utils/useCheckImageLoad.js"
+                  );
+                  incrementCounter(count, setImgsLoaded, "img", 2);
+                }}
               />
             </div>
 
