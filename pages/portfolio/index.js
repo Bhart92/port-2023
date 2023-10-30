@@ -52,10 +52,7 @@ const index = () => {
       </Head>
 
       <section className="relative portfolio-wrapper text-2xl">
-        // {!imgsLoaded && <Loading />}
-        <div className={`portfolio mt-12 mb-16 ${!imgsLoaded ? "hidden" : ""}`}>
-          {generateProjects()}
-        </div>
+        <div className={`portfolio mt-12 mb-16 `}>{generateProjects()}</div>
       </section>
     </>
   );
