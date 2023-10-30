@@ -9,6 +9,7 @@ export const appData = {
       imageAlt: "3M Earthland",
       isVideo: false,
       url: "https://www.triggerxr.com/work/3m-earthland",
+      lazy: false,
     },
     {
       title: "Lunar New Year",
@@ -19,6 +20,7 @@ export const appData = {
       imageAlt: "Lunar New Year (Support dev)",
       isVideo: false,
       url: "https://www.triggerxr.com/work/oswald-the-lucky-rabbit-lunar-new-year-ar-greeting-card",
+      lazy: false,
     },
     {
       title: "Avatar Creature Experience",
@@ -29,6 +31,7 @@ export const appData = {
       imageAlt: "Avatar Creature Experience (Tablet UI)",
       isVideo: false,
       url: "https://www.triggerxr.com/work/avatar-the-way-of-water",
+      lazy: true,
     },
     {
       title: "The La Brea Sinkhole Experience",
@@ -39,6 +42,7 @@ export const appData = {
       imageAlt: "The La Brea Sinkhole Experiencep",
       isVideo: false,
       url: "https://www.triggerxr.com/work/la-brea-season-2-web-ar-experience",
+      lazy: true,
     },
     {
       title: "The PureLeaf Experience",
@@ -49,6 +53,7 @@ export const appData = {
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
       isVideo: true,
       url: "https://www.fulyaguney.com/copy-of-niantic-safari-app",
+      lazy: true,
     },
     {
       title: "Super Bowl Pepsi Halftime Show Ultra Pass",
@@ -59,6 +64,7 @@ export const appData = {
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
       isVideo: true,
       url: "https://www.triggerxr.com/work/super-bowl-halftime-show",
+      lazy: true,
     },
     {
       title: "Trigger | Culver City Stormwater Project",
@@ -69,6 +75,7 @@ export const appData = {
       imageAlt: "Culver City Signage",
       isVideo: false,
       url: "https://www.triggerxr.com/work/culver-city-stormwater-project",
+      lazy: true,
     },
     {
       title: "Baila Burnie!",
@@ -79,6 +86,7 @@ export const appData = {
       imageAlt: "Baila Burnie!",
       isVideo: false,
       url: "https://www.triggerxr.com/work/baila-burnie",
+      lazy: true,
     },
   ],
   timelineContent: [
@@ -107,6 +115,7 @@ export const appData = {
       date: "Mar 2023",
       url: "https://www.triggerxr.com/work/3m-earthland",
       isVideo: false,
+      lazy: true,
     },
     {
       title: "Trigger | Lunar New Year",
@@ -117,6 +126,7 @@ export const appData = {
       date: "Feb 2023",
       url: "https://www.triggerxr.com/work/oswald-the-lucky-rabbit-lunar-new-year-ar-greeting-card",
       isVideo: false,
+      lazy: true,
     },
     {
       title: "Welcomed my second baby",
@@ -135,6 +145,7 @@ export const appData = {
       date: "Sept 2022 - Dec 2022",
       url: "https://www.triggerxr.com/work/avatar-the-way-of-water",
       isVideo: false,
+      lazy: true,
     },
     {
       title: "Trigger | The La Brea Sinkhole Experience",
@@ -145,6 +156,7 @@ export const appData = {
       date: "Sept 2022 - Nov 2022",
       url: "https://www.triggerxr.com/work/la-brea-season-2-web-ar-experience",
       isVideo: false,
+      lazy: true,
     },
 
     {
@@ -156,6 +168,7 @@ export const appData = {
       date: "Feb 2022 - Mar 2022",
       url: "https://www.fulyaguney.com/copy-of-niantic-safari-app",
       isVideo: true,
+      lazy: true,
     },
     {
       title: "Trigger | Super Bowl Pepsi Halftime Show Ultra Pass",
@@ -176,6 +189,7 @@ export const appData = {
       date: "Nov 2021",
       url: "https://www.triggerxr.com/work/culver-city-stormwater-project",
       isVideo: false,
+      lazy: true,
     },
     {
       title: "Trigger | Baila Burnie",
@@ -186,6 +200,7 @@ export const appData = {
       date: "Oct 2021 - Nov 2021",
       url: "https://www.triggerxr.com/work/baila-burnie",
       isVideo: false,
+      lazy: true,
     },
     {
       title: "Trigger | Molson Coors Interactive Projects",
@@ -204,6 +219,7 @@ export const appData = {
       date: "Sept 2021 - Feb 2022",
       url: "https://www.triggerxr.com/work/super-bowl-halftime-show",
       isVideo: true,
+      lazy: true,
     },
     {
       title: "Trigger XR",

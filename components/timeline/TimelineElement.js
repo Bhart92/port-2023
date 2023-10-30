@@ -15,8 +15,7 @@ const TimelineElement = ({
   projectImgAlt,
   url,
   courseList,
-  count,
-  setImgsLoaded,
+  lazy,
 }) => {
   const generateListItems = () => (
     <div className="timeline-element-list">
@@ -43,6 +42,7 @@ const TimelineElement = ({
       icon={
         <figure>
           <Image
+            priority={lazy}
             src={timeLineIcon}
             width={20}
             height={20}

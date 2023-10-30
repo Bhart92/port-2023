@@ -1,4 +1,3 @@
-"use client";
 import { appData } from "../../data/appData.js";
 import Head from "next/head";
 export const siteTitle = "https://brandonhart.dev/portfolio";
@@ -20,6 +19,8 @@ const index = () => {
           Brandon Hart | Portfolio | Web Developer | Software Engineer | WebAR
           Developer
         </title>
+        <link rel="preload" as="image" href="/images/threem.webp" />
+        <link rel="preload" as="image" href="/images/oswald.webp" />
 
         <meta name="robots" content="all" />
         <meta

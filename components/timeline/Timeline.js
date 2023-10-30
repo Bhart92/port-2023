@@ -1,6 +1,3 @@
-"use client";
-import Script from "next/script";
-
 import { appData } from "../../data/appData";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
@@ -26,9 +23,7 @@ const Timeline = ({ count, imgsLoaded, setImgsLoaded }) => {
           url={timelineEle?.url}
           courseList={timelineEle?.courseList}
           key={i}
-          count={count}
-          setImgsLoaded={setImgsLoaded}
-          imgsLoaded={imgsLoaded}
+          lazy={lazy}
         />
       );
     });
