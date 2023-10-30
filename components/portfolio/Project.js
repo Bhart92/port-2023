@@ -9,7 +9,7 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
         <a href={item.url} target="_blank">
           <article className="w-full flex mb-24 flex-col items-center m-auto md:flex-row md:items-start md:w-fit lg:mb-40">
             <Image
-              priority={i === 0 ? true : false}
+              priority={i === (0 || 1) ? true : false}
               className="m-auto w-full flex items-center justify-center md:mr-5 md:basis-1/2"
               src={item.projectImg}
               width={250}
