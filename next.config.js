@@ -1,16 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: "build",
+
   reactStrictMode: false,
   i18n: {
-  locales: ["en"],
-  defaultLocale: "en",
+    locales: ["en"],
+    defaultLocale: "en",
   },
-    experimental: {
+  experimental: {
     workerThreads: false,
-    cpus: 4
+    cpus: 4,
   },
 };
 
 module.exports = nextConfig;
-

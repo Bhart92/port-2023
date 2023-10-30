@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { incrementCounter } from "../../utils/useCheckImageLoad.js";
+
 const Project = ({ item, i, setImgsLoaded, count }) => {
   return (
     <>
@@ -21,7 +21,7 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
                 placeholder="blur"
                 blurDataURL={item.projectImg}
                 onLoad={() => {
-                  incrementCounter(count, setImgsLoaded, "img", 2);
+                  incrementCounter(count, setImgsLoaded, "img", 1);
                   console.log(count);
                 }}
               />
