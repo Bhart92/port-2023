@@ -10,9 +10,12 @@ const TimelineElement = ({
   date,
   creator,
   projectImg,
-  projectImgAlt,
+  imageAlt,
   url,
   courseList,
+  setImgsLoaded,
+  count,
+  imgsLoaded,
   lazy,
 }) => {
   const generateListItems = () => (
@@ -73,14 +76,15 @@ const TimelineElement = ({
                 src={projectImg}
                 width={450}
                 height={450}
-                alt={projectImgAlt}
-                // onLoad={() => {
-                //   incrementCounter(
-                //     count,
-                //     setImgsLoaded,
-                //     ".timeline-element-image img",
-                //   );
-                // }}
+                alt={imageAlt}
+                placeholder="blur"
+                blurDataURL={projectImg}
+                onLoad={async () => {
+                  const { incrementCounter } = await import(
+                    "../../utils/useCheckImageLoad.js"
+                  );
+                  incrementCounter(count, setImgsLoaded, "img", 1);
+                }}
               />
             </figure>
           </a>
