@@ -6,7 +6,7 @@ import Project from "../../components/portfolio/Project.js";
 const index = () => {
   const generateProjects = () => {
     return (
-      <div className="images">
+      <div className="images pt-8">
         {appData.projects.map((item, i) => (
           <Project item={item} i={i} key={i} />
         ))}
