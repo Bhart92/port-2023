@@ -226,7 +226,7 @@ export const appData = {
     {
       title: "Fractality, LLC.",
       desc: "I was connected with the director of Fractality, an interactive media company that was just getting off the ground. I worked closely with them to build their web presence.",
-      projectImg: "/images/fractality.png",
+      projectImg: "/images/fractality.webp",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Fractality, an interactive media company",
       date: "2018 - 2021",
