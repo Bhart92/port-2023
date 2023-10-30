@@ -11,18 +11,20 @@ const Project = ({ item, i }) => {
         )}{" "}
         <a href={item.url} target="_blank" className="w-full h-full">
           <article className="w-full h-full flex mb-24 flex-col items-center m-auto md:flex-row md:items-start md:w-fit lg:mb-40">
-            <Image
-              priority={i === 0 || i === 1 ? true : false}
-              className="m-auto w-full flex items-center justify-center md:mr-5 md:basis-1/2"
-              src={item.projectImg}
-              width={250}
-              height={250}
-              alt={item.imageAlt}
-              placeholder="blur"
-              blurDataURL={item.projectImg}
-            />
+            <div className="min-w-[360px] h-[250px] flex items-center justify-center md:mr-5 md:basis-1/2">
+              <Image
+                priority={i === 0 || i === 1 ? true : false}
+                className="m-auto w-full h-full"
+                src={item.projectImg}
+                width={250}
+                height={250}
+                alt={item.imageAlt}
+                placeholder="blur"
+                blurDataURL={item.projectImg}
+              />
+            </div>
 
-            <div className="w-full h-[230px] flex flex-col mt-2 md:basis-1/2 md:mt-0">
+            <div className="w-full min-w-[360px] h-[230px] flex flex-col mt-2 md:basis-1/2 md:mt-0">
               <h2 className="text-xl">{item.title}</h2>
               <p className="text-base">{item.description}</p>
               <aside className="text-sm mt-2">Tap to learn more</aside>
