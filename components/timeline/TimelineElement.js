@@ -66,7 +66,7 @@ const TimelineElement = ({
         <div
           className={`${styles.timelineElementImage} flex items-center justify-center`}
         >
-          <a target="_blank" href={url}>
+          <a href={url ? url : ""} target="_blank">
             <figure className="basis-1/2 flex items-center justify-center mt-2 md:justify-start md:mr-5">
               <Image
                 priority={false}
