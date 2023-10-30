@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Script from "next/script";
 
+import { incrementCounter } from "../../utils/useCheckImageLoad.js";
 const Project = ({ item, i, setImgsLoaded, count }) => {
   return (
     <>
@@ -12,7 +14,7 @@ const Project = ({ item, i, setImgsLoaded, count }) => {
             <div className="min-w-[360px] h-[250px] flex items-center justify-center md:mr-5 md:basis-1/2">
               <Image
                 priority={!item.lazy}
-                quality={35}
+                quality={15}
                 className="m-auto w-auto h-auto"
                 src={item.projectImg}
                 width={250}
