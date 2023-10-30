@@ -1,23 +1,13 @@
 import { appData } from "../../data/appData.js";
 import Head from "next/head";
-import { createRef } from "../../utils/useCheckImageLoad.js";
 export const siteTitle = "https://brandonhart.dev/portfolio";
 import Project from "../../components/portfolio/Project.js";
-import Loading from "../../components/Loading";
 const index = () => {
-  const { count, imgsLoaded, setImgsLoaded } = createRef();
-
   const generateProjects = () => {
     return (
       <div className="images [&>*:nth-child(1)]:mb-6">
         {appData.projects.map((item, i) => (
-          <Project
-            item={item}
-            i={i}
-            key={i}
-            setImgsLoaded={setImgsLoaded}
-            count={count}
-          />
+          <Project item={item} i={i} key={i} />
         ))}
       </div>
     );
@@ -51,10 +41,7 @@ const index = () => {
       </Head>
 
       <section className="relative portfolio-wrapper text-2xl">
-        {!imgsLoaded && <Loading />}
-        <div className={`portfolio mt-12 mb-16 ${!imgsLoaded ? "hidden" : ""}`}>
-          {generateProjects()}
-        </div>
+        <div className={`portfolio mt-12 mb-16 `}>{generateProjects()}</div>
       </section>
     </>
   );
