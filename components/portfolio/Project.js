@@ -13,7 +13,7 @@ const Project = ({ item, i }) => {
           <article className="w-full h-full flex mb-24 flex-col items-center m-auto md:flex-row md:items-start md:w-fit lg:mb-40">
             <div className="min-w-[360px] h-[250px] flex items-center justify-center md:mr-5 md:basis-1/2">
               <Image
-                priority={item.lazy}
+                priority={!item.lazy}
                 quality={35}
                 className="m-auto w-auto h-auto"
                 src={item.projectImg}
