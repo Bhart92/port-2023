@@ -252,6 +252,7 @@ export const appData = {
       desc: "I was connected with the director of Fractality, an interactive media company that was just getting off the ground. I worked closely with them to build their web presence.",
       projectImg: "/images/fractality.webp",
       imageAlt: "3M Earthland",
+      url: "/portfolio",
       timeLineIcon: "images/display.svg",
       timeLineIconAlt: "Fractality, an interactive media company",
       date: "2018 - 2021",
