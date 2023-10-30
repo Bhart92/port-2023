@@ -1,11 +1,9 @@
 import { useRef, useState } from "react";
 
-export const incrementCounter = (count, setImgsLoaded, target) => {
+export const incrementCounter = (count, setImgsLoaded, target, numToIter) => {
   count.current += 1;
   const images = document.querySelectorAll(`${target}`);
-  console.log(images);
-  // const images = document.querySelectorAll(".timeline-element-image img");
-  checkFinalImage(count.current, images.length, setImgsLoaded);
+  checkFinalImage(count.current, images.length, setImgsLoaded, numToIter);
 };
 export const createRef = () => {
   console.log("create ref");
@@ -18,9 +16,16 @@ export const createRef = () => {
     count,
   };
 };
-function checkFinalImage(count, length, setImgsLoaded) {
-  if (count >= length) {
-    console.log("hit final");
-    setImgsLoaded(true);
+function checkFinalImage(count, length, setImgsLoaded, numToIter) {
+  if (numToIter) {
+    if (count >= numToIter - 1) {
+      console.log("hit final");
+      setImgsLoaded(true);
+    } else {
+      if (count >= length) {
+        console.log("hit final");
+        setImgsLoaded(true);
+      }
+    }
   }
 }

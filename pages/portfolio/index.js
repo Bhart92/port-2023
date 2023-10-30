@@ -9,7 +9,7 @@ const index = () => {
 
   const generateProjects = () => {
     return (
-      <div className="images">
+      <div className="images [&>*:nth-child(1)]:mb-6">
         {appData.projects.map((item, i) => (
           <Project
             item={item}

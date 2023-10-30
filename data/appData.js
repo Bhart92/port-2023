@@ -36,7 +36,7 @@ export const appData = {
     {
       title: "The La Brea Sinkhole Experience",
       description:
-        "We developed a first-of-its-kind creative AR experience to promote the second season of the top-rated TV show La Brea in partnership with NBCUniversal. The web app experience allows users to place an interactive AR sinkhole in their personal environment.",
+        "We developed a first-of-its-kind creative AR experience to promote the top-rated TV show La Brea in partnership with NBCUniversal. The web app experience allows users to place an interactive AR sinkhole in their personal environment.",
       projectImg: "/images/brea.webp",
       imageStatus: false,
       imageAlt: "The La Brea Sinkhole Experiencep",
@@ -58,7 +58,7 @@ export const appData = {
     {
       title: "Super Bowl Pepsi Halftime Show Ultra Pass",
       description:
-        "Users were digitally transported into SoFi Stadium in Los Angeles to watch Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige, and Kendrick Lamar perform live. The various views allowed fans to get a closer look at the fast-paced Pepsi Super Bowl XLVII Halftime Show.",
+        "Users were digitally transported into SoFi Stadium in Los Angeles to watch Dr. Dre, Snoop Dogg, Eminem, Mary J. Blige, and Kendrick Lamar perform live.",
       projectImg: "/images/sb.webp",
       imageStatus: false,
       imageAlt: "Super Bowl Pepsi Halftime Show Ultra Pass",
