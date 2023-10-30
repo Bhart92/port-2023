@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import styles from "./timeline.module.scss";

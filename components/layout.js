@@ -1,4 +1,3 @@
-"use client";
 import { Inter } from "next/font/google";
 import Header from "./header/Header.js";
 import dynamic from "next/dynamic";

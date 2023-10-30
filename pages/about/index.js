@@ -1,5 +1,3 @@
-"use client";
-
 import Timeline from "@/components/timeline/Timeline";
 import Head from "next/head";
 import { createRef } from "@/utils/useCheckImageLoad.js";
