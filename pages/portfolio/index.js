@@ -1,3 +1,4 @@
+"use client";
 import { appData } from "../../data/appData.js";
 import Head from "next/head";
 import { createRef } from "../../utils/useCheckImageLoad.js";
