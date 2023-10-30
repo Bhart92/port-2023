@@ -1,13 +1,23 @@
 import { appData } from "../../data/appData.js";
 import Head from "next/head";
+import { createRef } from "../../utils/useCheckImageLoad.js";
 export const siteTitle = "https://brandonhart.dev/portfolio";
 import Project from "../../components/portfolio/Project.js";
+import Loading from "../../components/Loading";
 const index = () => {
+  const { count, imgsLoaded, setImgsLoaded } = createRef();
+
   const generateProjects = () => {
     return (
-      <div className="images pt-8">
+      <div className="images">
         {appData.projects.map((item, i) => (
-          <Project item={item} i={i} key={i} />
+          <Project
+            item={item}
+            i={i}
+            key={i}
+            setImgsLoaded={setImgsLoaded}
+            count={count}
+          />
         ))}
       </div>
     );
@@ -19,8 +29,6 @@ const index = () => {
           Brandon Hart | Portfolio | Web Developer | Software Engineer | WebAR
           Developer
         </title>
-        <link rel="preload" as="image" href="/images/threem.webp" />
-        <link rel="preload" as="image" href="/images/oswald.webp" />
 
         <meta name="robots" content="all" />
         <meta
@@ -43,7 +51,10 @@ const index = () => {
       </Head>
 
       <section className="relative portfolio-wrapper text-2xl">
-        <div className={`portfolio mt-12 mb-16 `}>{generateProjects()}</div>
+        {!imgsLoaded && <Loading />}
+        <div className={`portfolio mt-12 mb-16 ${!imgsLoaded ? "hidden" : ""}`}>
+          {generateProjects()}
+        </div>
       </section>
     </>
   );
