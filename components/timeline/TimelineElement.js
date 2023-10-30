@@ -14,9 +14,6 @@ const TimelineElement = ({
   url,
   courseList,
   setImgsLoaded,
-  count,
-  imgsLoaded,
-  lazy,
 }) => {
   const generateListItems = () => (
     <div className="timeline-element-list">
