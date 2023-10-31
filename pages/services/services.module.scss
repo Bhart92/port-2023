@@ -1,0 +1,25 @@
+.topServiceWrapper::after{
+	
+		background: rgba(146, 64, 14, .5);
+		height: 1px;
+		display: block;
+		content: "";
+		width: 100px;
+		margin: 0 auto;
+	
+}
+.articleLink{
+	a{
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+
+		}
+	}
+	&:first-of-type, &:last-of-type{
+		a{
+			@media screen and (min-width: 768px) {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}

@@ -29,7 +29,7 @@ const MobileNavLinks = ({ isOpen, setOpen }) => {
           href="/services"
         >
           <HiCog />
-          &nbsp; What We Do
+          &nbsp; Services
         </Link>
         <div className="flex items-center justify-center my-5">
           <a

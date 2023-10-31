@@ -50,9 +50,9 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="relative portfolio-wrapper text-2xl">
+      <section className="relative portfolio-wrapper text-2xl pt-10">
         {!imgsLoaded && <Loading />}
-        <div className={`portfolio mt-12 mb-16 ${!imgsLoaded ? "hidden" : ""}`}>
+        <div className={`portfolio mb-16 ${!imgsLoaded ? "hidden" : ""}`}>
           {generateProjects()}
         </div>
       </section>

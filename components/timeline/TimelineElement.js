@@ -51,11 +51,11 @@ const TimelineElement = ({
       <div
         className={`${styles.timelineElementHeader} flex flex-col items-center justify-center`}
       >
-        <h2 className="timeline-element text-center text-lg">{title}</h2>
+        <h2 className="timeline-element text-center text-3xl font-bold">{title}</h2>
         {creator ? <h3>{creator}</h3> : ""}
 
         <div className="timeline-element-desc w-11/12">
-          <p className="text-lg">{desc}</p>
+          <p className="text-base">{desc}</p>
         </div>
       </div>
       {courseList && courseList.length > 0 && generateListItems()}

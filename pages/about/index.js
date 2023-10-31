@@ -35,10 +35,10 @@ const index = () => {
       </Head>
 
       <section className="text-black h-auto text-2xl m-auto pt-12 w-full flex flex-col items-center about-wrapper relative">
-        <div className={`m-auto w-full w-full flex flex-col items-center`}>
-          <h1 className="text-center">About</h1>
-          <article className="max-w-[1050px]">
-            <p className="text-sm w-9/12 my-6 m-auto leading-7 text-center">
+        <div className='m-auto w-full w-full flex flex-col items-center'>
+          <h1 className="text-2xl font-bold w-full h-full text-center">About</h1>
+          <article className="max-w-[1050px] mx-auto 2xl:max-w-[1500px]">
+            <p className="text-base w-9/12 my-6 m-auto leading-7 text-center">
               In my time as a developer I have launched large budget projects
               for clients including Verizon, NBC, and PepsiCo. I've built
               modules enabling sales teams to expand across the US and helped
