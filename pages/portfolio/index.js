@@ -1,16 +1,15 @@
-"use client";
 import { appData } from "../../data/appData.js";
 import Head from "next/head";
+import { createRef } from "../../utils/useCheckImageLoad.js";
 export const siteTitle = "https://brandonhart.dev/portfolio";
 import Project from "../../components/portfolio/Project.js";
 import Loading from "../../components/Loading";
-import { createRef } from "@/utils/useCheckImageLoad.js";
 const index = () => {
   const { count, imgsLoaded, setImgsLoaded } = createRef();
 
   const generateProjects = () => {
     return (
-      <div className="images">
+      <div className="images [&>*:nth-child(1)]:mb-6">
         {appData.projects.map((item, i) => (
           <Project
             item={item}
@@ -51,10 +50,9 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="relative portfolio-wrapper text-2xl">
+      <section className="relative portfolio-wrapper text-2xl pt-10">
         {!imgsLoaded && <Loading />}
-
-        <div className={`portfolio mt-12 mb-16 ${!imgsLoaded ? "hidden" : ""}`}>
+        <div className={`portfolio mb-16 ${!imgsLoaded ? "hidden" : ""}`}>
           {generateProjects()}
         </div>
       </section>

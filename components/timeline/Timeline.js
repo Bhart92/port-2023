@@ -1,11 +1,9 @@
-"use client";
-
 import { appData } from "../../data/appData";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import useIsDesktopSize from "../../utils/useIsDesktopSize.js";
 import TimelineElement from "./TimelineElement";
-
+import styles from "./timeline.module.scss";
 const Timeline = ({ count, imgsLoaded, setImgsLoaded }) => {
   const { isDesktopSize, isTabletSize } = useIsDesktopSize();
   const { timelineContent } = appData;
@@ -17,7 +15,7 @@ const Timeline = ({ count, imgsLoaded, setImgsLoaded }) => {
           title={timelineEle.title}
           desc={timelineEle.desc}
           projectImg={timelineEle?.projectImg}
-          projectImgAlt={timelineEle?.projectImgAlt}
+          imageAlt={timelineEle?.imageAlt}
           timeLineIcon={timelineEle.timeLineIcon}
           timeLineIconAlt={timelineEle.timeLineIconAlt}
           date={timelineEle.date}
@@ -25,20 +23,22 @@ const Timeline = ({ count, imgsLoaded, setImgsLoaded }) => {
           url={timelineEle?.url}
           courseList={timelineEle?.courseList}
           key={i}
-          count={count}
-          setImgsLoaded={setImgsLoaded}
-          imgsLoaded={imgsLoaded}
+          lazy={timelineEle.lazy}
         />
       );
     });
   };
   return (
-    <VerticalTimeline
-      animate={false}
-      layout={isDesktopSize || isTabletSize ? "2-columns" : "1-column"}
-    >
-      {generateTimelineEles()}
-    </VerticalTimeline>
+    <>
+      {" "}
+      <VerticalTimeline
+        className={`${styles.verticalTimeline}`}
+        animate={false}
+        layout={isDesktopSize || isTabletSize ? "2-columns" : "1-column"}
+      >
+        {generateTimelineEles()}
+      </VerticalTimeline>
+    </>
   );
 };
 
