@@ -39,13 +39,13 @@ const index = () => {
           <h1 className="text-2xl font-bold w-full h-full text-center">About</h1>
           <article className="max-w-[1050px] mx-auto 2xl:max-w-[1500px]">
             <p className="text-base w-9/12 my-6 m-auto leading-7 text-center">
-              In my time as a developer I have launched large budget projects
-              for clients including Verizon, NBC, and PepsiCo. I've built
-              modules enabling sales teams to expand across the US and helped
-              build and maintain the web presence of several IPs. My expertise
-              has allowed me to bring projects in under-budget while exceeding
-              expectations. I love my work and look forward to new challenges
-              everyday.
+                In my time as a developer I have launched large budget projects
+                for clients including Verizon, NBC, and PepsiCo. I've built
+                modules enabling sales teams to expand across the US and helped
+                build and maintain the web presence of several IPs. My expertise
+                has allowed me to bring projects in under-budget while exceeding
+                expectations. I love my work and look forward to new challenges
+                everyday.
             </p>
           </article>
           <article className="w-10/12">
