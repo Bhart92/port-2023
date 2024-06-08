@@ -2,8 +2,12 @@ import { Inter } from "next/font/google";
 import Header from "./header/Header.js";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import Footer from './footer/Footer'
-const inter = Inter({ subsets: ["latin"] });
+import Footer from "./footer/Footer";
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
+});
 export const siteTitle = "https://brandonhart.dev/";
 
 function RootLayout({ children }) {
@@ -40,7 +44,6 @@ function RootLayout({ children }) {
         <div className="flex flex-col row-span-3 lg:col-span-3 lg:overflow-x-hidden lg:overflow-y-scroll">
           {children}
         </div>
-
       </main>
     </>
   );
