@@ -22,13 +22,7 @@ const DesktopNav = () => {
           <BsPersonBoundingBox />
           &nbsp; About
         </Link>
-        <Link
-          className="hover:text-amber-600 transition duration-900 flex text-white"
-          href="/services"
-        >
-          <HiCog />
-          &nbsp; Services
-        </Link>
+
         <div className="flex items-center justify-center">
           <a
             target="_blank"

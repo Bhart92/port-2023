@@ -73,12 +73,8 @@ const index = (props) => {
             <h1 className="text-center font-bold text-2xl">Services</h1>
             <article className="max-w-[1050px] mx-auto 2xl:max-w-[1500px]">
               <p className="text-base w-9/12 my-6 m-auto leading-7 text-center md:mb-10">
-                We offer full stack and front end web development. Each package
-                includes hosting, a free logo, and full ownership of your
-                website. We don't hold you hostage with monthly fees. we do
-                however offer a monthly subscription giving you 24/7 direct
-                access to a professional developer whenever you want to make
-                changes.
+                Each package includes hosting, a domain name, a logo, and full
+                ownership of your website.
               </p>
             </article>
             <div className="flex flex-col items-center mx-auto w-[75%] md:items-start ">
@@ -92,11 +88,10 @@ const index = (props) => {
             <div>
               <article className="max-w-[1050px] mx-auto">
                 <p className="text-base w-9/12 my-6 m-auto leading-7 text-center">
-                  We utilize modern web frameworks and best practices to
-                  optimize everything, everywhere. Using tools created by Google
-                  we diligently scan every website to ensure it is optmized for
-                  search engines and users. We will setup your Google Business
-                  account and help you get to the top of search engine results.
+                  I utilize modern web frameworks and best practices to optimize
+                  everything, everywhere. Using tools created by Google I will
+                  diligently scan every website to ensure it is optmized for
+                  search engines and users.
                 </p>
               </article>
               {generateImage()}

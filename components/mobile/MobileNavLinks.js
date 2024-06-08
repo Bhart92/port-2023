@@ -23,14 +23,7 @@ const MobileNavLinks = ({ isOpen, setOpen }) => {
           <BsPersonBoundingBox />
           &nbsp; About
         </Link>
-        <Link
-          onClick={() => setOpen(false)}
-          className="hover:text-amber-600 transition duration-900 flex my-5"
-          href="/services"
-        >
-          <HiCog />
-          &nbsp; Services
-        </Link>
+
         <div className="flex items-center justify-center my-5">
           <a
             target="_blank"
