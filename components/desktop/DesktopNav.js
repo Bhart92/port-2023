@@ -10,7 +10,7 @@ const DesktopNav = () => {
       <div className="nav-links-top flex justify-between flex-col w-95 h-full text-sm">
         <Link
           className="hover:text-amber-600 transition duration-900 flex"
-          href="/portfolio"
+          href="/about"
         >
           <HiOutlineDocumentText />
           &nbsp; Portfolio

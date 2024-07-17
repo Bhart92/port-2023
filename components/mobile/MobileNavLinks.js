@@ -10,7 +10,7 @@ const MobileNavLinks = ({ isOpen, setOpen }) => {
         <Link
           onClick={() => setOpen(false)}
           className="hover:text-amber-600 transition duration-900 flex my-5"
-          href="/portfolio"
+          href="/about"
         >
           <HiOutlineDocumentText />
           &nbsp; Portfolio
